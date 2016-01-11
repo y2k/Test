@@ -1,0 +1,3343 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+
+	<script type="text/javascript" src="lib/kotlin.js"></script>
+	<script type="text/javascript" src="ChanCleaner.js"></script>
+
+<title>/b/ - /Б/ред</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link id="favicon" rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="initial-scale=1">
+<link href="/makaba/templates/css/normalize.css" type="text/css" rel="stylesheet">
+<link href="/makaba/templates/css/makaba.css" title="makaba" type="text/css" rel="stylesheet">
+<link href="/makaba/templates/css/font-awesome.min.css" title="makaba" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/makaba/templates/js/jquery.1.7.2.min.js"></script>
+<script type="text/javascript">
+            var thread_cookie = "b_hidden_threads";
+		</script>
+<script type="text/javascript" src="/makaba/templates/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/makaba/templates/js/swag.js"></script>
+<script type="text/javascript" src="/makaba/templates/js/newwakaba.js"></script>
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/makaba/templates/js/html5shiv.js"></script>
+		<![endif]-->
+<script type="text/javascript">
+            loadInitialConfig({
+				thread_num: parseInt("0"),
+				board: "b",
+				likes: "0"
+			});
+		</script>
+ 
+</head>
+<body class="makaba">
+<input type="hidden" id="settings-comment-length" value="15000">
+<header>
+<div id="adminbar" class="adminbar-top">
+<ul class="menu">
+<ul class="menu-links-mob" style="float:left">
+<li><a href="/">Главная</a></li>
+<li><a id="settings" href="#">Настройка</a></li>
+<li class="desktop"><a href="/m.html" target="_blank">Mobile</a></li>
+<li class="desktop"><a href="/contacts.html">Контакты</a></li>
+<li class="desktop"><a id="nsfw" href="#">NSFW</a></li>
+<li class="desktop"><a href="/b/catalog.html">Каталог</a></li>
+<li class="desktop"><a href="#" id="fav-menu-btn">Избранное</a></li>
+<li class="desktop"><a href="/donate.html">Пожертвования</a></li>
+<li class="desktop"><a href="/makaba/makaba.fcgi?task=market">Купить пасскод</a></li>
+<li class="desktop"><a href="/makaba/makaba.fcgi?task=images_feed">Pics</a></li>
+<li class="desktop"><a href="/abu/res/42375.html">API</a></li>
+<li>
+<select id="SwitchStyles" class="desktop style-switcher mselect">
+<option selected="true" value="makaba">Makaba</option>
+<option value="futaba">Futaba</option>
+<option value="burichan">Burichan</option>
+<option value="muon">Muon</option>
+<option value="neutron">Neutron</option>
+<option value="gurochan">Gurochan</option>
+<option value="konsole">Консолечка</option>
+<option value="game">Game</option>
+</select>
+</li>
+</ul>
+<ul id="boardNavMobile" class="board-list-mob mobile">
+<div>
+Доски
+<select id="LakeNavForm">
+<option selected="true">Навигация</option>
+<optgroup label="Тематика">
+<option value="/au/">/au/</option>
+<option value="/bi/">/bi/</option>
+<option value="/biz/">/biz/</option>
+<option value="/bo/">/bo/</option>
+<option value="/c/">/c/</option>
+<option value="/em/">/em/</option>
+<option value="/fa/">/fa/</option>
+<option value="/fiz/">/fiz/</option>
+<option value="/fl/">/fl/</option>
+<option value="/ftb/">/ftb/</option>
+<option value="/gd/">/gd/</option>
+<option value="/hi/">/hi/</option>
+<option value="/hw/">/hw/</option>
+<option value="/me/">/me/</option>
+<option value="/mlp/">/mlp/</option>
+<option value="/mo/">/mo/</option>
+<option value="/mu/">/mu/</option>
+<option value="/ne/">/ne/</option>
+<option value="/po/">/po/</option>
+<option value="/pr/">/pr/</option>
+<option value="/psy/">/psy/</option>
+<option value="/ra/">/ra/</option>
+<option value="/re/">/re/</option>
+<option value="/s/">/s/</option>
+<option value="/sci/">/sci/</option>
+<option value="/sn/">/sn/</option>
+<option value="/sp/">/sp/</option>
+<option value="/spc/">/spc/</option>
+<option value="/t/">/t/</option>
+<option value="/tv/">/tv/</option>
+<option value="/un/">/un/</option>
+<option value="/w/">/w/</option>
+<option value="/wh/">/wh/</option>
+<option value="/wm/">/wm/</option>
+<option value="/wp/">/wp/</option>
+</optgroup>
+<optgroup label="Творчество">
+<option value="/di/">/di/</option>
+<option value="/diy/">/diy/</option>
+<option value="/pa/">/pa/</option>
+<option value="/p/">/p/</option>
+<option value="/trv/">/trv/</option>
+</optgroup>
+<optgroup label="Игры">
+<option value="/cg/">/cg/</option>
+<option value="/gb/">/gb/</option>
+<option value="/tes/">/tes/</option>
+<option value="/v/">/v/</option>
+<option value="/vg/">/vg/</option>
+</optgroup>
+<optgroup label="Японская культура">
+<option value="/a/">/a/</option>
+<option value="/fd/">/fd/</option>
+<option value="/ma/">/ma/</option>
+<option value="/vn/">/vn/</option>
+</optgroup>
+<optgroup label="Разное">
+<option value="/d/">/d/</option>
+<option value="/b/">/b/</option>
+<option value="/fag/">/fag/</option>
+<option value="/soc/">/soc/</option>
+<option value="/r/">/r/</option>
+<option value="/abu/">/abu/</option>
+</optgroup>
+<optgroup label="Взрослым">
+<option value="/fg/">/fg/</option>
+<option value="/fur/">/fur/</option>
+<option value="/g/">/g/</option>
+<option value="/ga/">/ga/</option>
+<option value="/h/">/h/</option>
+<option value="/ho/">/ho/</option>
+<option value="/hc/">/hc/</option>
+<option value="/e/">/e/</option>
+<option value="/fet/">/fet/</option>
+<option value="/sex/">/sex/</option>
+</optgroup>
+</select>
+</div>
+</ul>
+<ul style="float:right;"></ul>
+</ul>
+<hr>
+<nav class="rmenu desktop">
+<span class="nowrap">Тематика&nbsp;[<a title="автомобили и транспорт" href="/au/">au</a> / <a title="велосипеды" href="/bi/">bi</a> / <a title="бизнес" href="/biz/">biz</a> / <a title="книги" href="/bo/">bo</a> / <a title="комиксы и мультфильмы" href="/c/">c</a> / <a title="другие страны и туризм" href="/em/">em</a> / <a title="мода и стиль" href="/fa/">fa</a> / <a title="физкультура" href="/fiz/">fiz</a> / <a title="иностранные языки" href="/fl/">fl</a> / <a title="футбол" href="/ftb/">ftb</a> / <a title="hip-hop" href="/hh/">hh</a> / <a title="история" href="/hi/">hi</a> / <a title="медицина" href="/me/">me</a> / <a title="магия" href="/mg/">mg</a> / <a title="my little pony" href="/mlp/">mlp</a> / <a title="мотоциклы" href="/mo/">mo</a> / <a title="Фильмы" href="/mov/">mov</a> / <a title="музыка" href="/mu/">mu</a> / <a title="животные и природа" href="/ne/">ne</a> / <a title="психология" href="/psy/">psy</a> / <a title="религия и философия" href="/re/">re</a> / <a title="наука" href="/sci/">sci</a> / <a title="научная фантастика" href="/sf/">sf</a> / <a title="паранормальные явления" href="/sn/">sn</a> / <a title="спорт" href="/sp/">sp</a> / <a title="космос и астрономия" href="/spc/">spc</a> / <a title="тв и кино" href="/tv/">tv</a> / <a title="образование" href="/un/">un</a> / <a title="оружие" href="/w/">w</a> / <a title="warhammer" href="/wh/">wh</a> / <a title="военная техника и оружие" href="/wm/">wm</a> / <a title="обои и высокое разрешение" href="/wp/">wp</a>]</span>
+<span class="nowrap">Творчество&nbsp;[<a title="столовая" href="/di/">di</a> / <a title="хобби" href="/diy/">diy</a> / <a title="музыканты" href="/mus/">mus</a> / <a title="живопись" href="/pa/">pa</a> / <a title="фото" href="/p/">p</a> / <a title="Работа и карьера" href="/wrk/">wrk</a> / <a title="путешествия" href="/trv/">trv</a>] </span>
+<span class="nowrap">Техника и софт&nbsp;[<a title="gamedev" href="/gd/">gd</a> / <a title="компьютерное железо" href="/hw/">hw</a> / <a title="мобильные устройства и приложения" href="/mobi/">mobi</a> / <a title="программирование" href="/pr/">pr</a> / <a title="радиотехника" href="/ra/">ra</a> / <a title="программы" href="/s/">s</a> / <a title="техника" href="/t/">t</a> / <a title="веб-мастера" href="/web/">web</a>]</span>
+<span class="nowrap">Игры&nbsp;[<a title="настольные игры" href="/bg/">bg</a> / <a title="консоли" href="/cg/">cg</a> / <a title="Бесконечное лето" href="/es/">es</a> / <a title="the elder scrolls" href="/tes/">tes</a> / <a title="video games" href="/v/">v</a> / <a title="video games general" href="/vg/">vg</a> / <a title="Текстовые авторские рпг" href="/wr/">wr</a>]</span>
+<span class="nowrap">Японская культура&nbsp;[<a title="аниме" href="/a/">a</a> / <a title="фэндом" href="/fd/">fd</a> / <a title="японская культура" href="/ja/">ja</a> / <a title="манга" href="/ma/">ma</a> / <a title="визуальные новеллы" href="/vn/">vn</a>]</span>
+<span class="nowrap">Разное&nbsp;[<a title="дискуссии о два.ч" href="/d/">d</a> / <a title="бред" href="/b/">b</a> / <a title="общение" href="/soc/">soc</a> / <a title="анимация" href="/media/">media</a> / <a title="просьбы" href="/r/">r</a> / <a title="здесь живет абу" href="/abu/">abu</a> / <a title="Убежище" href="/rf/">rf</a> ]</span>
+<span class="nowrap">Взрослым&nbsp;[<a title="трапы" href="/fg/">fg</a> / <a title="фурри" href="/fur/">fur</a> / <a title="хорошие девушки" href="/gg/">gg</a> / <a title="геи" href="/ga/">ga</a> / <a title="хентай" href="/h/">h</a> / <a title="прочий хентай" href="/ho/">ho</a> / <a title="hardcore" href="/hc/">hc</a> / <a title="extreme pron" href="/e/">e</a> / <a title="фетиш" href="/fet/">fet</a> / <a title="секс и отношения" href="/sex/">sex</a> / <a title="фагготрия" href="/fag/">fag</a>]</span>
+<span class="nowrap">Политика&nbsp;[<a title="Политика" href="/po/">po</a> / <a title="новости" href="/news/">news</a>]</span>
+<span class="nowrap">[&nbsp;<a title="Юзердоски" href="/userboards.html" target="_blank">Прочие доски</a>&nbsp;]</span>
+<div class="dropd-boards" style="display: none;">
+<span class="dropd-board-btn" id="dropd-board-btn">Мои доски <i class="fa fa-caret-down"></i></span>
+<div class="dropd-board-list" id="dropd-board-list">
+<ul id="dropd-board-list-ul">
+</ul>
+</div>
+</div>
+</nav>
+</div>
+<div class="logo">
+<a class="board-banner desktop" title="/ftb/" href="/ftb/"><img src="/ololo/ftb_2.gif" style="border:0px none;"></a>
+<br>
+<a href="/b/" style="text-decoration:none;color:inherit;">
+<span id="title">
+/Б/ред
+</span>
+</a>
+</div>
+<hr>
+<div class="norm-reply">
+<div class="reply-label-wrapper">
+<span class="desktop">[<span id="TopNormalReplyLabel" class="reply-label reply-label-top">Создать тред</span>]</span>
+<span class="desktop favorite-board" style="display:none;">[ <i title="Добавить в мои доски" class="fa fa-star-o postbtn-favorite-board" data-num="" id=""></i> ]</span>
+<span id="TopNormalReplyLabel" class="reply-label button-mob mobile reply-label-top">Создать тред</span>
+</div>
+<div id="TopNormalReply" class="TopNormalReply"></div>
+</div>
+<div id="settings-window" style="display:none;" class="qr qr-settings">
+<div id="settings-window-header" class="qr-header">
+<span id="settings-title">Настройки</span>
+</div>
+<div id="settings-body">
+</div>
+<div id="settings-footer" class="setting-buttons">
+<input type="button" id="settings-btn-save" value="Сохранить">
+<input type="button" id="settings-btn-export" value="Экспорт">
+<input type="button" id="settings-btn-import" value="Импорт">
+<input type="button" id="settings-btn-close" value="Отмена">
+</div>
+</div>
+<div id="setting-editor-window" style="display:none;" class="qr qr-settings">
+<div id="setting-editor-window-header" class="qr-header">
+<span id="setting-editor-title"></span>
+</div>
+<div id="setting-editor-body">
+</div>
+<div id="setting-editor-footer" class="setting-buttons">
+<input type="button" id="setting-editor-btn-save" value="Сохранить">
+<input type="button" id="setting-editor-btn-export" value="Экспорт">
+<input type="button" id="setting-editor-btn-import" value="Импорт">
+<input type="button" id="setting-editor-btn-close" value="Отмена">
+</div>
+</div>
+<div class="qr qr-reply" id="qr" style="display:none;">
+<div class="qr-header" id="qr-header">Ответить в тред <span class="qr-close" id="qr-close">X</span></div>
+<form id="qr-postform" class="qr-postform postform" action="/makaba/posting.fcgi" method="post" enctype="multipart/form-data">
+<input type="hidden" name="task" value="post">
+<input type="hidden" name="board" value="b">
+<input type="hidden" name="thread" id="qr-thread" value="0">
+<input type="hidden" name="usercode" value="" class="qr-usercode-input">
+<input class="mod-code-input" type="hidden" value="" name="code">
+<input type="hidden" name="captcha_type" value="recaptcha">
+<div class="qr-mail">
+<input name="email" type="text" id="qr-e-mail" placeholder="E-mail" class="qmail">
+<input type="submit" id="qr-submit" value="Отправить" class="qsubmit">
+</div>
+<div class="symbol-counter">
+<span class="message-byte-len">15000</span>
+<textarea name="comment" rows="6" wrap="soft" placeholder="Комментарий. Макс. длина 15000" class="qcomment" id="qr-shampoo"></textarea>
+</div>
+<div class="toolbar-area">
+<div id="qr-CommentToolbar"></div>
+</div>
+<div class="qr-images">
+<input type="file" name="image1" id="qr-image1" class="postform-image">
+<input type="file" name="image2" id="qr-image2" class="postform-image">
+<input type="file" name="image3" id="qr-image3" class="postform-image">
+<input type="file" name="image4" id="qr-image4" class="postform-image">
+</div>
+<div class="captcha-box">
+<div class="captcha-image captcha-reload-button" id="captcha-widget"></div>  
+<input type="hidden" name="2chaptcha_id" class="captcha-key">
+<input type="text" autocomplete="off" name="2chaptcha_value" id="qr-captcha-value">
+</div>
+</form>
+<div id="qr-submit-box" style="display:none">
+<div id="qr-submit-label">Отправка поста</div>
+<div id="qr-progress-control" style="display:none">
+<progress id="qr-progress-bar" value="0" max="1"></progress>
+<input type="button" id="qr-cancel-upload" value="Отмена">
+</div>
+</div>
+<div class="qr-vk-public">
+<hr>
+<a href="https://vk.com/ru2ch">vk.com/ru2ch</a> -оФФициальная группа VK
+</div>
+</div>
+<div class="qr qr-favourites" id="qr-fav" style="display: none">
+<div class="qr-header" id="qr-fav-header">Избранное <span class="qr-close" id="qr-fav-close">X</span></div>
+<div class="qr-body" id="qr-fav-body">
+</div>
+</div>
+<form id="postform" class="postform" action="/makaba/posting.fcgi" method="post" enctype="multipart/form-data" style="display:none;">
+ 
+<hr class="postform-hr">
+<input type="hidden" name="task" value="post">
+<input type="hidden" name="board" value="b">
+<input type="hidden" name="thread" value="0">
+<input type="hidden" name="usercode" value="" id="usercode-input" class="usercode-input">
+<input class="mod-code-input" type="hidden" value="" name="code">
+<input type="hidden" name="captcha_type" value="recaptcha">
+<table>
+<tbody>
+<tr class="mail">
+<td class="label desktop"><label for="name">Опции</label></td>
+<td>
+<input id="e-mail" type="text" value="" name="email" size="30" placeholder="опции">
+<input type="submit" id="submit" name="submit" value="Отправить" class="desktop">
+</td>
+</tr>
+<tr class="comment-area">
+<td class="label desktop">
+<label for="msg">Пост</label>
+</td>
+<td class="symbol-counter">
+<span class="message-byte-len">15000</span>
+<textarea name="comment" id="shampoo" rows="10" placeholder="Комментарий. Макс. длина 15000"></textarea>
+</td>
+</tr>
+<tr class="toolbar-area">
+<td class="desktop"></td>
+<td id="CommentToolbar">
+</td>
+</tr>
+<tr class="option-area desktop">
+<td class="label desktop"></td>
+<td>
+<div class="box first" onclick="ToggleSage()">
+<input type="checkbox" id="sagecheckbox" name="sage">
+<label for="sage">
+<span title="Don't bump the thread">Sage</span>
+</label>
+</div>
+<div class="box">
+<input type="checkbox" id="makewatermark" name="water_mark">
+<label for="makewatermark">
+<span title="Поставить ватермарку">Ватермарка</span>
+</label>
+</div>
+<div class="box" style="display:none" id="mod-mark-checkbox">
+<input type="checkbox" value="1" name="mod_mark" id="mod-mark-box">
+<label for="mod-mark-box">
+<span title="Поставить мод тег">Мод тег</span>
+</label>
+</div>
+<div class="box last">
+<input type="checkbox" id="op" name="op_mark" value="1">
+<label for="op">
+<span title="Подписываться ОПом">ОП треда</span>
+</label>
+</div>
+</td>
+</tr>
+<tr class="images-area">
+<td class="label desktop">
+<label for="files-1">Файлы</label>
+</td>
+<td>
+<input type="file" name="image1" id="image1" class="postform-image">
+<input type="file" name="image2" id="image2" class="postform-image">
+<input type="file" name="image3" id="image3" class="postform-image">
+<input type="file" name="image4" id="image4" class="postform-image">
+</td>
+</tr>
+<tr class="captcha-row">
+<td class="label desktop">
+<label for="recaptcha-response-field">Captcha</label>
+</td>
+<td style="vertical-align:middle;">
+<div class="captcha-box">
+<div class="captcha-image captcha-reload-button" id="captcha-widget-main"></div>  
+<input type="hidden" name="2chaptcha_id" class="captcha-key">
+<input type="text" autocomplete="off" name="2chaptcha_value" id="captcha-value">
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="mobile send-mob"><input class="button-mob" type="submit" id="submit" name="submit" value="Отправить"></div>
+</td>
+</tr>
+<tr class="rules-area">
+<td colspan="2">
+<span class="rules">Перед отправкой сообщения прочтите <a href="/faq.html" target="_blank">FAQ</a>, <a href="/faq/faq_b.html" target="_blank">FAQ раздела</a> и <a href="/rules.html" target="_blank">правила раздела</a>.</span><br>
+<span class="rules"><a href="https://vk.com/ru2ch">vk.com/ru2ch</a> - оФФициальная группа VK </span><br>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="kupi-passcode-suka">
+<hr class="postform-hr">
+<span class="passcode">Покупка пасскода позволяет обходить капчу. [<a href="https://2ch.hk/makaba/makaba.fcgi?task=market">Узнать больше</a>]</span>
+</div>
+</form>
+<hr class="postform-hr">
+<div class="news desktop">
+<div>15/10/15 - <a href="/abu/res/42716.html">Набор в модераторы 15.10 по 17.10</a></div>
+<div>27/09/15 - <a href="/abu/res/42375.html">Двач API — Инструкция к применению</a></div>
+<div>15/09/15 - <a href="/abu/res/42121.html">Про пожертвования и ДДоС</a></div>
+</div>
+<hr class="prerekl-hr">
+<center><b>Официальная Телеграм конфа Двача <a href="https://telegram.me/joinchat/AC-JPjvJsc3fbmJV_taUKQ">**CLICK**</a></b></center>
+<hr class="prerekl-hr">
+ 
+ 
+ 
+</header>
+<section class="posts">
+<div class="thread-nav desktop">
+<form class="search desktop" action="/makaba/makaba.fcgi" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="board" value="b">
+<input type="hidden" name="task" value="search">
+<input type="text" name="find" placeholder="Поиск [enter]">
+ 
+ 
+</form>
+[<a href="/b/catalog.html" target="_blank">Каталог</a>]
+</div>
+<div class="thread-nav-mob mobile">
+<a class="button-mob" href="/b/catalog.html">Каталог</a>
+</div>
+<hr>
+<form id="posts-form">
+<div id="thread-112934594" class="thread">
+<div id="post-112934594" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934594" data-num="112934594">
+<div class="post-details" id="post-details-112934594">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934594"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 04:35:26&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934594.html#112934594">№</a><a href="/b/res/112934594.html#112934594" class="postbtn-reply-href" name="112934594">112934xxx</a>
+<script>if('112934594' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934594]').html('112934594')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934594" id="fa-star112934594"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934594"></span>
+<a class="postbtn-hide" href="#" data-num="112934594"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934594'); return false;"></a>
+<span data-num="112934594" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934594.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934594/14524761267730.jpg">14524761267730.jpg</a>
+<span class="filesize">(67Кб, 1024x1375)</span>
+</figcaption>
+<div id="exlink-112934594-95f8cd151db2e836202fce85e91b7082" class="image-link">
+<a href="/b/src/112934594/14524761267730.jpg" target="_blank" name="expandfunc" onclick="return expand('112934594-95f8cd151db2e836202fce85e91b7082','/b/src/112934594/14524761267730.jpg','/b/thumb/112934594/14524761267730s.jpg',1024,1375,163,220)">
+<img src="/b/thumb/112934594/14524761267730s.jpg" width="163" height="220" alt="67" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934594" class="post-message">
+Сосаны, что это за шлюха?<br>Что за стори?
+</blockquote>
+<div id="refmap-112934594" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<div class="hide-view">
+<a href="/b/res/112934594.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934594">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112915431" class="thread">
+<div id="post-112915431" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112915431" data-num="112915431">
+<div class="post-details" id="post-details-112915431">
+<input type="checkbox" name="delete" class="turnmeoff" value="112915431"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 22:22:39&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112915431.html#112915431">№</a><a href="/b/res/112915431.html#112915431" class="postbtn-reply-href" name="112915431">112915xxx</a>
+<script>if('112915431' != '112915xxx') {if($.cookie('makabadmin')) {$('a[name=112915431]').html('112915431')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112915431" id="fa-star112915431"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112915431"></span>
+<a class="postbtn-hide" href="#" data-num="112915431"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112915431'); return false;"></a>
+<span data-num="112915431" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112915431.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112915431/14524537599380.jpg">14524537599380.jpg</a>
+<span class="filesize">(146Кб, 1000x1000)</span>
+</figcaption>
+<div id="exlink-112915431-7fd68d9ad0eda9f26ab6e7f178e30ea8" class="image-link">
+<a href="/b/src/112915431/14524537599380.jpg" target="_blank" name="expandfunc" onclick="return expand('112915431-7fd68d9ad0eda9f26ab6e7f178e30ea8','/b/src/112915431/14524537599380.jpg','/b/thumb/112915431/14524537599380s.jpg',1000,1000,220,220)">
+<img src="/b/thumb/112915431/14524537599380s.jpg" width="220" height="220" alt="146" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112915431" class="post-message">
+<strong>UrFavChat</strong><br><br>Ты парень&#47;девушка и тебе не с кем поговорить?<br>Любишь обсуждать всякую хуйню, но окружающие люди шарахаются и сторонятся тебя?<br>Тогда именно для тебя мы создали <strong>ЛАМПОВУЮ</strong> <span class="spoiler">(на самом деле нет)</span> беседу в Telegram, с анонимностью и прочим говном.<br>Только у нас ты можешь обсуждать всякую хуйню и тебя не назовут долбоебом <span class="spoiler">(нет)</span>.<br><br><strong>Мы ждем тебя!</strong><br><br>Ссылка для вступления: <strong><a href="https:&#47;&#47;telegram.me&#47;joinchat&#47;AEwE5zwiebraA7mnuk8Icg" target="_blank">https:&#47;&#47;telegram.me&#47;joinchat&#47;AEwE5zwiebraA7mnuk8Icg</a></strong><br><br><em>03.12.2015</em>: Группа была переведена в супер-группу.<br><br><em>20.11.2015</em>: У нас появился бот - <strong>@UrFavBot</strong><br>Используйте команду &#47;help@UrFavBot чтобы получить список команд.<br>Скрытые команды - &#47;hidden<br><br><em>Беседа создана 11.11.2015, на момент создания треда в ней находится 301 участник.</em><br><br><strong>Для параноиков:</strong> Ваш номер не будет виден никому кроме вас или&#47;и людей в вашем списке контактов.
+</blockquote>
+<div id="refmap-112915431" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob">Пропущено 103 постов.</span>
+<div class="hide-view">
+<a href="/b/res/112915431.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112915431">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 103 постов. Нажмите <a href="/b/res/112915431.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112933637" class="post-wrapper">
+<div class="post reply " id="post-body-112933637" data-num="112933637">
+<div class="post-details" id="post-details-112933637">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933637"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:12:24&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112915431.html#112933637">№</a><a href="/b/res/112915431.html#112933637" class="postbtn-reply-href" name="112933637">112933xxx</a>
+<script>if('112933637' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933637]').html('112933637')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112933637" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112933637" class="post-message">
+<a href="/b/res/112915431.html#112915431" class="post-reply-link" data-thread="112915431" data-num="112915431">>>112915431 (OP)</a><br>имси
+</blockquote>
+<div id="refmap-112933637" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112933662" class="post-wrapper">
+<div class="post reply " id="post-body-112933662" data-num="112933662">
+<div class="post-details" id="post-details-112933662">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933662"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:13:24&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112915431.html#112933662">№</a><a href="/b/res/112915431.html#112933662" class="postbtn-reply-href" name="112933662">112933xxx</a>
+<script>if('112933662' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933662]').html('112933662')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112933662" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112933662" class="post-message">
+1
+</blockquote>
+<div id="refmap-112933662" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934593" class="post-wrapper">
+<div class="post reply " id="post-body-112934593" data-num="112934593">
+<div class="post-details" id="post-details-112934593">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934593"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 04:33:36&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112915431.html#112934593">№</a><a href="/b/res/112915431.html#112934593" class="postbtn-reply-href" name="112934593">112934xxx</a>
+<script>if('112934593' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934593]').html('112934593')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934593" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934593" class="post-message">
+666
+</blockquote>
+<div id="refmap-112934593" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112934249" class="thread">
+<div id="post-112934249" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934249" data-num="112934249">
+<div class="post-details" id="post-details-112934249">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934249"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:42:30&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934249.html#112934249">№</a><a href="/b/res/112934249.html#112934249" class="postbtn-reply-href" name="112934249">112934xxx</a>
+<script>if('112934249' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934249]').html('112934249')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934249" id="fa-star112934249"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934249"></span>
+<a class="postbtn-hide" href="#" data-num="112934249"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934249'); return false;"></a>
+<span data-num="112934249" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934249.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934249/14524657507430.jpg">14524657507430.jpg</a>
+<span class="filesize">(251Кб, 1920x1080)</span>
+</figcaption>
+<div id="exlink-112934249-c4ec2048a41e94d8585d4c9482030235" class="image-link">
+<a href="/b/src/112934249/14524657507430.jpg" target="_blank" name="expandfunc" onclick="return expand('112934249-c4ec2048a41e94d8585d4c9482030235','/b/src/112934249/14524657507430.jpg','/b/thumb/112934249/14524657507430s.jpg',1920,1080,220,123)">
+<img src="/b/thumb/112934249/14524657507430s.jpg" width="220" height="123" alt="251" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934249" class="post-message">
+Как вам кинцо пикрил? Нашли ли вы в нем какой-нибудь глубокий посыл?
+</blockquote>
+<div id="refmap-112934249" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 29 постов</strong><br> 10 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112934249.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934249">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 29 постов, 10 с картинками. Нажмите <a href="/b/res/112934249.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934556" class="post-wrapper">
+<div class="post reply " id="post-body-112934556" data-num="112934556">
+<div class="post-details" id="post-details-112934556">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934556"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:29&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934249.html#112934556">№</a><a href="/b/res/112934249.html#112934556" class="postbtn-reply-href" name="112934556">112934xxx</a>
+<script>if('112934556' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934556]').html('112934556')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934556" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934556" class="post-message">
+<a href="/b/res/112934249.html#112934249" class="post-reply-link" data-thread="112934249" data-num="112934249">>>112934249 (OP)</a><br><span class="unkfunc">&gt;Нашли ли вы в нем какой-нибудь глубокий посыл?</span><br><br>Тащемта, способность вынести что-то полезное из фильма - зависит от уровня развития зрителя. Каждый смотрит фильм на разных уровней. Для кого-то это будет йоба, для кого-то это будет фап на главного героя. А кто-то поразмышляет над ситуациями или идеями, которые дает нам фильм.<br><br><em>мимонебыдло</em>
+</blockquote>
+<div id="refmap-112934556" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934559" class="post-wrapper">
+<div class="post reply " id="post-body-112934559" data-num="112934559">
+<div class="post-details" id="post-details-112934559">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934559"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:07:31&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934249.html#112934559">№</a><a href="/b/res/112934249.html#112934559" class="postbtn-reply-href" name="112934559">112934xxx</a>
+<script>if('112934559' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934559]').html('112934559')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934559" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934559" class="post-message">
+<a href="/b/res/112934249.html#112934531" class="post-reply-link" data-thread="112934249" data-num="112934531">>>112934531</a><br><span class="unkfunc">&gt;Начало</span><br><span class="unkfunc">&gt;Фильм</span><br><span class="unkfunc">&gt;Творчество</span><br>@<br><span class="unkfunc">&gt;Трансформеры</span><br><span class="unkfunc">&gt;Фильм</span><br><span class="unkfunc">&gt;Не творчество</span>
+</blockquote>
+<div id="refmap-112934559" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934592" class="post-wrapper">
+<div class="post reply " id="post-body-112934592" data-num="112934592">
+<div class="post-details" id="post-details-112934592">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934592"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 04:30:31&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934249.html#112934592">№</a><a href="/b/res/112934249.html#112934592" class="postbtn-reply-href" name="112934592">112934xxx</a>
+<script>if('112934592' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934592]').html('112934592')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934592" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934592" class="post-message">
+<a href="/b/res/112934249.html#112934532" class="post-reply-link" data-thread="112934249" data-num="112934532">>>112934532</a><br>фильм снят не абы кем и не просто так. Фильмы Нолана все имеют пож собой смысл и посыл. Для быдла это просто боевичок, но в этом фильме лежит реально интересный смысл и мысль
+</blockquote>
+<div id="refmap-112934592" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112922611" class="thread">
+<div id="post-112922611" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112922611" data-num="112922611">
+<div class="post-details" id="post-details-112922611">
+<input type="checkbox" name="delete" class="turnmeoff" value="112922611"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 23:13:34&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922611.html#112922611">№</a><a href="/b/res/112922611.html#112922611" class="postbtn-reply-href" name="112922611">112922xxx</a>
+<script>if('112922611' != '112922xxx') {if($.cookie('makabadmin')) {$('a[name=112922611]').html('112922611')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112922611" id="fa-star112922611"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112922611"></span>
+<a class="postbtn-hide" href="#" data-num="112922611"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112922611'); return false;"></a>
+<span data-num="112922611" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112922611.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112922611/14524568145830.jpg">14524568145830.jpg</a>
+<span class="filesize">(822Кб, 1024x768)</span>
+</figcaption>
+<div id="exlink-112922611-8284e47b6457dbedfe2e303f6fa7d695" class="image-link">
+<a href="/b/src/112922611/14524568145830.jpg" target="_blank" name="expandfunc" onclick="return expand('112922611-8284e47b6457dbedfe2e303f6fa7d695','/b/src/112922611/14524568145830.jpg','/b/thumb/112922611/14524568145830s.jpg',1024,768,220,165)">
+<img src="/b/thumb/112922611/14524568145830s.jpg" width="220" height="165" alt="822" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112922611" class="post-message">
+Наша проблема в том, что мы выращены женщинами для женщин. Практически у всех, кто сидит здесь постоянно (зависает) отсутствуем мужское воспитание. Мы засюсюканные с детства куски говна, которые привыкли, что за них всё сделают, кашкой накормят, дадут компотик, сводят погулять, а перед сном покажут мультик. Дело тут не только и не столько в гиперопеке, сколько в мировосприятии. Даже если &quot;гиперопека&quot; как таковая отсутствует, мальчик всё равно растёт подобно лопуху: школа со стервозными училками, телевизор или пека дома, двор с такими же пустыми, серыми и скучными одноклассниками - и всё это каждый день. Ребёнок ничем не интересуется, у него нет никаких значимых хобби, он не занимается саморазвитием, а живет, по сути, как паразит с так и не перерезанной маминой пуповиной.<br><br>Если тебе больше 18 и ты ни разу в жизни не работал, то, мой друг, будь уверен, ты - как раз-таки предмет обсуждения. Потому что мужчине свойственно попробовать свои силы, узнать, сможет он сам себя обеспечить, или обосрется, и только члендевки ждут, когда мамка их &quot;устроит&quot; <span class="spoiler">читай &quot;заставит пойти&quot;</span> на работу.<br><br>По сути такой человек не добьется в жизни ничего. Никогда. Потому что он не может изменить себя, у него отсутствует сила воли и мотивация. А человек, который не может изменить себя, управлять сам собой, не может менять мир, начиная от собственной комнаты и заканчивая страной.<br><br>Женщинам, в свою очередь, это очень удобно. Ты не задумывался, почему одни парни к 18 годам уже переебали десяток-другой девчонок, а другие в 25 ноют о том, что их никто не любит и с ними не хотят знакомиться на улице? Именно поэтому. Ни одна девушка не хочет засюсюкавшуюся корзиночку, будь у нее хоть миллионное наследство. Ей противна сама мысль о совокуплении с таким человеком. Но, тем не менее, он очень удобен, с помощью пизды им легко можно помыкать, его можно загнать под каблук, окольцевать, заставить содержать чужого ребёнка, а после подать на развод и отсудить половину имущества. Потому что за вонючее, потное и волосатое отверстие в мясе он готов унижаться как угодно, писать пламенные письма, провожать с работы и лизать пяточки. Внешняя любовь ему нужна как героин наркоману, и он готов как угодно унижаться даже за самую крохотную дозу, переустанавливать винду за спасибо и делать курсачи.<br><br>Что с этим делать отдельно взятому омежке, который понимает проблему, понимает, что у него два пути - снаркоманиться или оказаться куколдом у властной, всратой и жирной тян?
+</blockquote>
+<div id="refmap-112922611" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 130 постов</strong><br> 5 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112922611.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112922611">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 130 постов, 5 с картинками. Нажмите <a href="/b/res/112922611.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934586" class="post-wrapper">
+<div class="post reply " id="post-body-112934586" data-num="112934586">
+<div class="post-details" id="post-details-112934586">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934586"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:51:00&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922611.html#112934586">№</a><a href="/b/res/112922611.html#112934586" class="postbtn-reply-href" name="112934586">112934xxx</a>
+<script>if('112934586' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934586]').html('112934586')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934586" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934586" class="post-message">
+Таких неебически тупых мудаков, как ОП я не видел очень давно.
+</blockquote>
+<div id="refmap-112934586" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934590" class="post-wrapper">
+<div class="post reply " id="post-body-112934590" data-num="112934590">
+<div class="post-details" id="post-details-112934590">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934590"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:52:46&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922611.html#112934590">№</a><a href="/b/res/112922611.html#112934590" class="postbtn-reply-href" name="112934590">112934xxx</a>
+<script>if('112934590' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934590]').html('112934590')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934590" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934590" class="post-message">
+<a href="/b/res/112922611.html#112934582" class="post-reply-link" data-thread="112922611" data-num="112934582">>>112934582</a><br><br>Всем похуй какого пола мудак, если он мудак. Не быть мудаком можно научиться почитав пару книг, любых, чтобы понять где мудак, а где его противоположность.
+</blockquote>
+<div id="refmap-112934590" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934591" class="post-wrapper">
+<div class="post reply " id="post-body-112934591" data-num="112934591">
+<div class="post-details" id="post-details-112934591">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934591"/>
+<a href="mailto:sage" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 04:22:24&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922611.html#112934591">№</a><a href="/b/res/112922611.html#112934591" class="postbtn-reply-href" name="112934591">112934xxx</a>
+<script>if('112934591' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934591]').html('112934591')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934591" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934591" class="post-message">
+<a href="/b/res/112922611.html#112922611" class="post-reply-link" data-thread="112922611" data-num="112922611">>>112922611 (OP)</a><br>Толсто. Твоя мамаша шлюха померла, вот и бесишься.
+</blockquote>
+<div id="refmap-112934591" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112930937" class="thread">
+<div id="post-112930937" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112930937" data-num="112930937">
+<div class="post-details" id="post-details-112930937">
+<input type="checkbox" name="delete" class="turnmeoff" value="112930937"/>
+<a href="mailto:Миди клавишных нить стартует" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:17:06&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112930937.html#112930937">№</a><a href="/b/res/112930937.html#112930937" class="postbtn-reply-href" name="112930937">112930xxx</a>
+<script>if('112930937' != '112930xxx') {if($.cookie('makabadmin')) {$('a[name=112930937]').html('112930937')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112930937" id="fa-star112930937"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112930937"></span>
+<a class="postbtn-hide" href="#" data-num="112930937"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112930937'); return false;"></a>
+<span data-num="112930937" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112930937.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112930937/14524606262230.jpg">14524606262230.jpg</a>
+<span class="filesize">(56Кб, 524x700)</span>
+</figcaption>
+<div id="exlink-112930937-66034c63b90733cd82385a963a2b1b11" class="image-link">
+<a href="/b/src/112930937/14524606262230.jpg" target="_blank" name="expandfunc" onclick="return expand('112930937-66034c63b90733cd82385a963a2b1b11','/b/src/112930937/14524606262230.jpg','/b/thumb/112930937/14524606262230s.jpg',524,700,164,220)">
+<img src="/b/thumb/112930937/14524606262230s.jpg" width="164" height="220" alt="56" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112930937" class="post-message">
+Ну корочи, решил я себе тут синтезатор прикупить, в музаче оче мало антуанов, выбираю между casio ctk-496 ctk-501 ctk-3000. Так как понятия не имею чем отличаются жду советов мудрых
+</blockquote>
+<div id="refmap-112930937" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 4 постов</strong><br> 1 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112930937.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112930937">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 4 постов, 1 с картинками. Нажмите <a href="/b/res/112930937.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934492" class="post-wrapper">
+<div class="post reply " id="post-body-112934492" data-num="112934492">
+<div class="post-details" id="post-details-112934492">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934492"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:03:03&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112930937.html#112934492">№</a><a href="/b/res/112930937.html#112934492" class="postbtn-reply-href" name="112934492">112934xxx</a>
+<script>if('112934492' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934492]').html('112934492')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934492" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934492" class="post-message">
+БУИМПППП
+</blockquote>
+<div id="refmap-112934492" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934558" class="post-wrapper">
+<div class="post reply " id="post-body-112934558" data-num="112934558">
+<div class="post-details" id="post-details-112934558">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934558"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:07:31&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112930937.html#112934558">№</a><a href="/b/res/112930937.html#112934558" class="postbtn-reply-href" name="112934558">112934xxx</a>
+<script>if('112934558' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934558]').html('112934558')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934558" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934558" class="post-message">
+Зачем он тебе?
+</blockquote>
+<div id="refmap-112934558" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934589" class="post-wrapper">
+<div class="post reply " id="post-body-112934589" data-num="112934589">
+<div class="post-details" id="post-details-112934589">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934589"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:52:08&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112930937.html#112934589">№</a><a href="/b/res/112930937.html#112934589" class="postbtn-reply-href" name="112934589">112934xxx</a>
+<script>if('112934589' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934589]').html('112934589')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934589" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934589" class="post-message">
+Хули ты собрался синтезировать, уебок? Зарепортил наркомана.
+</blockquote>
+<div id="refmap-112934589" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112927653" class="thread">
+<div id="post-112927653" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112927653" data-num="112927653">
+<div class="post-details" id="post-details-112927653">
+<input type="checkbox" name="delete" class="turnmeoff" value="112927653"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 23:52:16&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112927653.html#112927653">№</a><a href="/b/res/112927653.html#112927653" class="postbtn-reply-href" name="112927653">112927xxx</a>
+<script>if('112927653' != '112927xxx') {if($.cookie('makabadmin')) {$('a[name=112927653]').html('112927653')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112927653" id="fa-star112927653"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112927653"></span>
+<a class="postbtn-hide" href="#" data-num="112927653"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112927653'); return false;"></a>
+<span data-num="112927653" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112927653.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112927653/14524591369730.jpg">14524591369730.jpg</a>
+<span class="filesize">(28Кб, 400x400)</span>
+</figcaption>
+<div id="exlink-112927653-cdb4dfdea8d27313c72cef5016603473" class="image-link">
+<a href="/b/src/112927653/14524591369730.jpg" target="_blank" name="expandfunc" onclick="return expand('112927653-cdb4dfdea8d27313c72cef5016603473','/b/src/112927653/14524591369730.jpg','/b/thumb/112927653/14524591369730s.jpg',400,400,220,220)">
+<img src="/b/thumb/112927653/14524591369730s.jpg" width="220" height="220" alt="28" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112927653" class="post-message">
+Грустнотред.<br>Заходи, рассказывай.
+</blockquote>
+<div id="refmap-112927653" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 138 постов</strong><br> 16 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112927653.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112927653">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 138 постов, 16 с картинками. Нажмите <a href="/b/res/112927653.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934528" class="post-wrapper">
+<div class="post reply " id="post-body-112934528" data-num="112934528">
+<div class="post-details" id="post-details-112934528">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934528"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:05:00&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112927653.html#112934528">№</a><a href="/b/res/112927653.html#112934528" class="postbtn-reply-href" name="112934528">112934xxx</a>
+<script>if('112934528' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934528]').html('112934528')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934528" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934528" class="post-message">
+Привет всем.<br>Я счастлив. Всем щастья!
+</blockquote>
+<div id="refmap-112934528" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934533" class="post-wrapper">
+<div class="post reply " id="post-body-112934533" data-num="112934533">
+<div class="post-details" id="post-details-112934533">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934533"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:05:13&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112927653.html#112934533">№</a><a href="/b/res/112927653.html#112934533" class="postbtn-reply-href" name="112934533">112934xxx</a>
+<script>if('112934533' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934533]').html('112934533')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934533" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934533" class="post-message">
+Явармии.
+</blockquote>
+<div id="refmap-112934533" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934588" class="post-wrapper">
+<div class="post reply " id="post-body-112934588" data-num="112934588">
+<div class="post-details" id="post-details-112934588">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934588"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:51:37&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112927653.html#112934588">№</a><a href="/b/res/112927653.html#112934588" class="postbtn-reply-href" name="112934588">112934xxx</a>
+<script>if('112934588' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934588]').html('112934588')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934588" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934588" class="post-message">
+Биопроблемники. Кек.
+</blockquote>
+<div id="refmap-112934588" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112904123" class="thread">
+<div id="post-112904123" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112904123" data-num="112904123">
+<div class="post-details" id="post-details-112904123">
+<input type="checkbox" name="delete" class="turnmeoff" value="112904123"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 20:51:46&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112904123.html#112904123">№</a><a href="/b/res/112904123.html#112904123" class="postbtn-reply-href" name="112904123">112904xxx</a>
+<script>if('112904123' != '112904xxx') {if($.cookie('makabadmin')) {$('a[name=112904123]').html('112904123')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112904123" id="fa-star112904123"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112904123"></span>
+<a class="postbtn-hide" href="#" data-num="112904123"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112904123'); return false;"></a>
+<span data-num="112904123" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112904123.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112904123/14524483068280.jpg">14524483068280.jpg</a>
+<span class="filesize">(131Кб, 1280x720)</span>
+</figcaption>
+<div id="exlink-112904123-f817d3f00c88bb835e69ecf592148d1d" class="image-link">
+<a href="/b/src/112904123/14524483068280.jpg" target="_blank" name="expandfunc" onclick="return expand('112904123-f817d3f00c88bb835e69ecf592148d1d','/b/src/112904123/14524483068280.jpg','/b/thumb/112904123/14524483068280s.jpg',1280,720,220,123)">
+<img src="/b/thumb/112904123/14524483068280s.jpg" width="220" height="123" alt="131" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112904123" class="post-message">
+<strong>Ужина Анона Легитимный</strong><br><br>На пике сосиски ромкор, сметана, картофель мелкий прошлогодний во фритюре. Перец&#47;соль по вкусу.<br><br>Заранее нассал в ротешник всем, кто будет бугуртить о съедобности картофельной кожуры
+</blockquote>
+<div id="refmap-112904123" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 339 постов</strong><br> 88 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112904123.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112904123">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 339 постов, 88 с картинками. Нажмите <a href="/b/res/112904123.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934117" class="post-wrapper">
+<div class="post reply " id="post-body-112934117" data-num="112934117">
+<div class="post-details" id="post-details-112934117">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934117"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:34:51&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112904123.html#112934117">№</a><a href="/b/res/112904123.html#112934117" class="postbtn-reply-href" name="112934117">112934xxx</a>
+<script>if('112934117' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934117]').html('112934117')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934117" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934117" class="post-message">
+<a href="/b/res/112904123.html#112933088" class="post-reply-link" data-thread="112904123" data-num="112933088">>>112933088</a><br>злотых, дебил
+</blockquote>
+<div id="refmap-112934117" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934215" class="post-wrapper">
+<div class="post reply " id="post-body-112934215" data-num="112934215">
+<div class="post-details" id="post-details-112934215">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934215"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:40:14&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112904123.html#112934215">№</a><a href="/b/res/112904123.html#112934215" class="postbtn-reply-href" name="112934215">112934xxx</a>
+<script>if('112934215' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934215]').html('112934215')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934215" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934215" class="post-message">
+<a href="/b/res/112904123.html#112934117" class="post-reply-link" data-thread="112904123" data-num="112934117">>>112934117</a><br>Какие злотые в Чехии?
+</blockquote>
+<div id="refmap-112934215" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934587" class="post-wrapper">
+<div class="post reply withimg" id="post-body-112934587" data-num="112934587">
+<div class="post-details" id="post-details-112934587">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934587"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:51:16&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112904123.html#112934587">№</a><a href="/b/res/112904123.html#112934587" class="postbtn-reply-href" name="112934587">112934xxx</a>
+<script>if('112934587' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934587]').html('112934587')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934587" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112904123/14524734764370.jpg">14524734764370.jpg</a>
+<span class="filesize">(52Кб, 502x700)</span>
+</figcaption>
+<div id="exlink-112934587-d25e16213953d1ba90862a4d2a41da75" class="image-link">
+<a href="/b/src/112904123/14524734764370.jpg" target="_blank" name="expandfunc" onclick="return expand('112934587-d25e16213953d1ba90862a4d2a41da75','/b/src/112904123/14524734764370.jpg','/b/thumb/112904123/14524734764370s.jpg',502,700,121,170)">
+<img src="/b/thumb/112904123/14524734764370s.jpg" width="121" height="170" alt="52" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934587" class="post-message">
+<a href="/b/res/112904123.html#112932039" class="post-reply-link" data-thread="112904123" data-num="112932039">>>112932039</a><br><span class="unkfunc">&gt; США</span><br>
+</blockquote>
+<div id="refmap-112934587" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112934499" class="thread">
+<div id="post-112934499" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934499" data-num="112934499">
+<div class="post-details" id="post-details-112934499">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934499"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:03:28&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934499.html#112934499">№</a><a href="/b/res/112934499.html#112934499" class="postbtn-reply-href" name="112934499">112934xxx</a>
+<script>if('112934499' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934499]').html('112934499')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934499" id="fa-star112934499"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934499"></span>
+<a class="postbtn-hide" href="#" data-num="112934499"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934499'); return false;"></a>
+<span data-num="112934499" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934499.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934499/14524670082020.jpg">14524670082020.jpg</a>
+<span class="filesize">(57Кб, 604x416)</span>
+</figcaption>
+<div id="exlink-112934499-e26a3c40accf2683d0ac0b91611ecd3e" class="image-link">
+<a href="/b/src/112934499/14524670082020.jpg" target="_blank" name="expandfunc" onclick="return expand('112934499-e26a3c40accf2683d0ac0b91611ecd3e','/b/src/112934499/14524670082020.jpg','/b/thumb/112934499/14524670082020s.jpg',604,416,220,151)">
+<img src="/b/thumb/112934499/14524670082020s.jpg" width="220" height="151" alt="57" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934499" class="post-message">
+Как вам пикрил? Еще можно лог собственного роутера мониторить, если живете с тян.
+</blockquote>
+<div id="refmap-112934499" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<div class="hide-view">
+<a href="/b/res/112934499.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934499">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<div id="post-112934544" class="post-wrapper">
+<div class="post reply " id="post-body-112934544" data-num="112934544">
+<div class="post-details" id="post-details-112934544">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934544"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:05:57&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934499.html#112934544">№</a><a href="/b/res/112934499.html#112934544" class="postbtn-reply-href" name="112934544">112934xxx</a>
+<script>if('112934544' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934544]').html('112934544')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934544" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934544" class="post-message">
+<span class="unkfunc">&gt;играть в шпионаж вместо того, чтобы отношаться</span><br>нинужно, как же оно еще может быть?
+</blockquote>
+<div id="refmap-112934544" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934585" class="post-wrapper">
+<div class="post reply " id="post-body-112934585" data-num="112934585">
+<div class="post-details" id="post-details-112934585">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934585"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:50:55&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934499.html#112934585">№</a><a href="/b/res/112934499.html#112934585" class="postbtn-reply-href" name="112934585">112934xxx</a>
+<script>if('112934585' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934585]').html('112934585')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934585" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934585" class="post-message">
+<a href="/b/res/112934499.html#112934544" class="post-reply-link" data-thread="112934499" data-num="112934544">>>112934544</a><br>Многие следят за своими. А способы годные.
+</blockquote>
+<div id="refmap-112934585" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112934342" class="thread">
+<div id="post-112934342" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934342" data-num="112934342">
+<div class="post-details" id="post-details-112934342">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934342"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:48:05&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934342.html#112934342">№</a><a href="/b/res/112934342.html#112934342" class="postbtn-reply-href" name="112934342">112934xxx</a>
+<script>if('112934342' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934342]').html('112934342')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934342" id="fa-star112934342"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934342"></span>
+<a class="postbtn-hide" href="#" data-num="112934342"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934342'); return false;"></a>
+<span data-num="112934342" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934342.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934342/14524660857840.jpg">14524660857840.jpg</a>
+<span class="filesize">(485Кб, 2871x1914)</span>
+</figcaption>
+<div id="exlink-112934342-31df76e68a19e39d37716ef59f4d21d1" class="image-link">
+<a href="/b/src/112934342/14524660857840.jpg" target="_blank" name="expandfunc" onclick="return expand('112934342-31df76e68a19e39d37716ef59f4d21d1','/b/src/112934342/14524660857840.jpg','/b/thumb/112934342/14524660857840s.jpg',2871,1914,220,146)">
+<img src="/b/thumb/112934342/14524660857840s.jpg" width="220" height="146" alt="485" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934342" class="post-message">
+Двач, я на выходные слетал в Лондон, вот только что вернулся. <br><br>А как прошли твои выходные?
+</blockquote>
+<div id="refmap-112934342" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 9 постов</strong><br> 1 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112934342.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934342">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 9 постов, 1 с картинками. Нажмите <a href="/b/res/112934342.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934576" class="post-wrapper">
+<div class="post reply " id="post-body-112934576" data-num="112934576">
+<div class="post-details" id="post-details-112934576">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934576"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:31:04&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934342.html#112934576">№</a><a href="/b/res/112934342.html#112934576" class="postbtn-reply-href" name="112934576">112934xxx</a>
+<script>if('112934576' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934576]').html('112934576')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934576" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934576" class="post-message">
+<a href="/b/res/112934342.html#112934573" class="post-reply-link" data-thread="112934342" data-num="112934573">>>112934573</a><br>Сам съебывал или семья вывезла?
+</blockquote>
+<div id="refmap-112934576" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934581" class="post-wrapper">
+<div class="post reply " id="post-body-112934581" data-num="112934581">
+<div class="post-details" id="post-details-112934581">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934581"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:50:09&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934342.html#112934581">№</a><a href="/b/res/112934342.html#112934581" class="postbtn-reply-href" name="112934581">112934xxx</a>
+<script>if('112934581' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934581]').html('112934581')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934581" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934581" class="post-message">
+<a href="/b/res/112934342.html#112934576" class="post-reply-link" data-thread="112934342" data-num="112934576">>>112934576</a><br><br>работаю
+</blockquote>
+<div id="refmap-112934581" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934584" class="post-wrapper">
+<div class="post reply withimg" id="post-body-112934584" data-num="112934584">
+<div class="post-details" id="post-details-112934584">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934584"/>
+<a href="mailto:sage" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:50:54&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934342.html#112934584">№</a><a href="/b/res/112934342.html#112934584" class="postbtn-reply-href" name="112934584">112934xxx</a>
+<script>if('112934584' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934584]').html('112934584')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934584" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934342/14524734543700.jpg">14524734543700.jpg</a>
+<span class="filesize">(4Кб, 200x133)</span>
+</figcaption>
+<div id="exlink-112934584-b6e8e2eb6f53963531728e685a4b740a" class="image-link">
+<a href="/b/src/112934342/14524734543700.jpg" target="_blank" name="expandfunc" onclick="return expand('112934584-b6e8e2eb6f53963531728e685a4b740a','/b/src/112934342/14524734543700.jpg','/b/thumb/112934342/14524734543700s.jpg',200,133,170,113)">
+<img src="/b/thumb/112934342/14524734543700s.jpg" width="170" height="113" alt="4" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934584" class="post-message">
+<a href="/b/res/112934342.html#112934342" class="post-reply-link" data-thread="112934342" data-num="112934342">>>112934342 (OP)</a><br>Это: &quot;Двач, я посрал &quot; - тред?
+</blockquote>
+<div id="refmap-112934584" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112932539" class="thread">
+<div id="post-112932539" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112932539" data-num="112932539">
+<div class="post-details" id="post-details-112932539">
+<input type="checkbox" name="delete" class="turnmeoff" value="112932539"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:38:31&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112932539.html#112932539">№</a><a href="/b/res/112932539.html#112932539" class="postbtn-reply-href" name="112932539">112932xxx</a>
+<script>if('112932539' != '112932xxx') {if($.cookie('makabadmin')) {$('a[name=112932539]').html('112932539')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112932539" id="fa-star112932539"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112932539"></span>
+<a class="postbtn-hide" href="#" data-num="112932539"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112932539'); return false;"></a>
+<span data-num="112932539" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112932539.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images ">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524619116850.jpg">14524619116850.jpg</a>
+<span class="filesize">(162Кб, 1920x1080)</span>
+</figcaption>
+<div id="exlink-112932539-b8147dbac4186fb03d775b878cb16057" class="image-link">
+<a href="/b/src/112932539/14524619116850.jpg" target="_blank" name="expandfunc" onclick="return expand('112932539-b8147dbac4186fb03d775b878cb16057','/b/src/112932539/14524619116850.jpg','/b/thumb/112932539/14524619116850s.jpg',1920,1080,220,123)">
+<img src="/b/thumb/112932539/14524619116850s.jpg" width="220" height="123" alt="162" class="img preview ">
+</a>
+</div>
+</figure>
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524619116881.png">14524619116881.png</a>
+<span class="filesize">(20Кб, 265x144)</span>
+</figcaption>
+<div id="exlink-112932539-976dda0beb42576a9e5104eb2a4885df" class="image-link">
+<a href="/b/src/112932539/14524619116881.png" target="_blank" name="expandfunc" onclick="return expand('112932539-976dda0beb42576a9e5104eb2a4885df','/b/src/112932539/14524619116881.png','/b/thumb/112932539/14524619116881s.jpg',265,144,220,119)">
+<img src="/b/thumb/112932539/14524619116881s.jpg" width="220" height="119" alt="20" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112932539" class="post-message">
+<strong>Hunger Games <span class="spoiler">уровня &#47;b&#47;</span> #8</strong><br><br>Чтобы принять участие, окажитесь в первых 23 постах (победитель предыдущих игр проходит автоматом), запостив сюда аватарку своего персонажа и его имя.<br>Умерших персонажей из предыдущих тредов указывать крайне нежелательно.<br>События в игре определяются рандомно, ОП лишь является ведущим.<br>Всем удачи!
+</blockquote>
+<div id="refmap-112932539" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 59 постов</strong><br> 30 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112932539.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112932539">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 59 постов, 30 с картинками. Нажмите <a href="/b/res/112932539.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934501" class="post-wrapper">
+<div class="post reply " id="post-body-112934501" data-num="112934501">
+<div class="post-details" id="post-details-112934501">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934501"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:03:32&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112932539.html#112934501">№</a><a href="/b/res/112932539.html#112934501" class="postbtn-reply-href" name="112934501">112934xxx</a>
+<script>if('112934501' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934501]').html('112934501')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934501" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934501" class="post-message">
+<a href="/b/res/112932539.html#112934462" class="post-reply-link" data-thread="112932539" data-num="112934462">>>112934462</a><br>Симулятор голодных игр. 12 дистриктов по 2 человека в каждом. Этих <strong>человеков</strong> выбирают аноны, но победитель прошлых игр проходит автоматом. Ферштейн?
+</blockquote>
+<div id="refmap-112934501" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934549" class="post-wrapper">
+<div class="post reply " id="post-body-112934549" data-num="112934549">
+<div class="post-details" id="post-details-112934549">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934549"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:09&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112932539.html#112934549">№</a><a href="/b/res/112932539.html#112934549" class="postbtn-reply-href" name="112934549">112934xxx</a>
+<script>if('112934549' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934549]').html('112934549')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934549" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images ">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524671691520.png">14524671691520.png</a>
+<span class="filesize">(41Кб, 1272x224)</span>
+</figcaption>
+<div id="exlink-112934549-6653c8d93aec5277f6181fe178acc2a6" class="image-link">
+<a href="/b/src/112932539/14524671691520.png" target="_blank" name="expandfunc" onclick="return expand('112934549-6653c8d93aec5277f6181fe178acc2a6','/b/src/112932539/14524671691520.png','/b/thumb/112932539/14524671691520s.jpg',1272,224,170,29)">
+<img src="/b/thumb/112932539/14524671691520s.jpg" width="170" height="29" alt="41" class="img preview ">
+</a>
+</div>
+</figure>
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524671691531.png">14524671691531.png</a>
+<span class="filesize">(32Кб, 1080x202)</span>
+</figcaption>
+<div id="exlink-112934549-e3df9cb40d37a08ad83ea92bcddd6ebe" class="image-link">
+<a href="/b/src/112932539/14524671691531.png" target="_blank" name="expandfunc" onclick="return expand('112934549-e3df9cb40d37a08ad83ea92bcddd6ebe','/b/src/112932539/14524671691531.png','/b/thumb/112932539/14524671691531s.jpg',1080,202,170,31)">
+<img src="/b/thumb/112932539/14524671691531s.jpg" width="170" height="31" alt="32" class="img preview ">
+</a>
+</div>
+</figure>
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524671691542.png">14524671691542.png</a>
+<span class="filesize">(40Кб, 1320x224)</span>
+</figcaption>
+<div id="exlink-112934549-57388a4b2a0e9541d0a8cf9def6019ad" class="image-link">
+<a href="/b/src/112932539/14524671691542.png" target="_blank" name="expandfunc" onclick="return expand('112934549-57388a4b2a0e9541d0a8cf9def6019ad','/b/src/112932539/14524671691542.png','/b/thumb/112932539/14524671691542s.jpg',1320,224,170,28)">
+<img src="/b/thumb/112932539/14524671691542s.jpg" width="170" height="28" alt="40" class="img preview ">
+</a>
+</div>
+</figure>
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112932539/14524671691543.png">14524671691543.png</a>
+<span class="filesize">(348Кб, 1480x1844)</span>
+</figcaption>
+<div id="exlink-112934549-b13dbcde07437d8b204ec99f62105d53" class="image-link">
+<a href="/b/src/112932539/14524671691543.png" target="_blank" name="expandfunc" onclick="return expand('112934549-b13dbcde07437d8b204ec99f62105d53','/b/src/112932539/14524671691543.png','/b/thumb/112932539/14524671691543s.jpg',1480,1844,136,170)">
+<img src="/b/thumb/112932539/14524671691543s.jpg" width="136" height="170" alt="348" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934549" class="post-message">
+Добавил несколько событий к животным. Всего выйдет около 100-120 разных ивентов только на первый ход. Осталось допилить день, ночь и пир. То есть еще около 300-400 ивентов.
+</blockquote>
+<div id="refmap-112934549" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934583" class="post-wrapper">
+<div class="post reply " id="post-body-112934583" data-num="112934583">
+<div class="post-details" id="post-details-112934583">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934583"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:50:38&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112932539.html#112934583">№</a><a href="/b/res/112932539.html#112934583" class="postbtn-reply-href" name="112934583">112934xxx</a>
+<script>if('112934583' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934583]').html('112934583')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934583" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934583" class="post-message">
+<a href="/b/res/112932539.html#112934549" class="post-reply-link" data-thread="112932539" data-num="112934549">>>112934549</a><br>Охуенно. Застал только первые треды, но там не было эвентов.
+</blockquote>
+<div id="refmap-112934583" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112934268" class="thread">
+<div id="post-112934268" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934268" data-num="112934268">
+<div class="post-details" id="post-details-112934268">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934268"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:43:33&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934268.html#112934268">№</a><a href="/b/res/112934268.html#112934268" class="postbtn-reply-href" name="112934268">112934xxx</a>
+<script>if('112934268' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934268]').html('112934268')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934268" id="fa-star112934268"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934268"></span>
+<a class="postbtn-hide" href="#" data-num="112934268"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934268'); return false;"></a>
+<span data-num="112934268" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934268.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934268/14524658130760.png">14524658130760.png</a>
+<span class="filesize">(701Кб, 2600x3764)</span>
+</figcaption>
+<div id="exlink-112934268-81aa53a036d75c3d62087a6998d9fb0a" class="image-link">
+<a href="/b/src/112934268/14524658130760.png" target="_blank" name="expandfunc" onclick="return expand('112934268-81aa53a036d75c3d62087a6998d9fb0a','/b/src/112934268/14524658130760.png','/b/thumb/112934268/14524658130760s.jpg',2600,3764,151,220)">
+<img src="/b/thumb/112934268/14524658130760s.jpg" width="151" height="220" alt="701" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934268" class="post-message">
+<strong>Анкетотред</strong> открыт. Надеюсь, ты уже достаточно ночной.
+</blockquote>
+<div id="refmap-112934268" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 7 постов</strong><br> 2 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112934268.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934268">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 7 постов, 2 с картинками. Нажмите <a href="/b/res/112934268.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934548" class="post-wrapper">
+<div class="post reply " id="post-body-112934548" data-num="112934548">
+<div class="post-details" id="post-details-112934548">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934548"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:07&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934268.html#112934548">№</a><a href="/b/res/112934268.html#112934548" class="postbtn-reply-href" name="112934548">112934xxx</a>
+<script>if('112934548' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934548]').html('112934548')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934548" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934548" class="post-message">
+<a href="/b/res/112934268.html#112934541" class="post-reply-link" data-thread="112934268" data-num="112934541">>>112934541</a><br>аутизм*<br>бстрфкс
+</blockquote>
+<div id="refmap-112934548" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934557" class="post-wrapper">
+<div class="post reply " id="post-body-112934557" data-num="112934557">
+<div class="post-details" id="post-details-112934557">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934557"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:33&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934268.html#112934557">№</a><a href="/b/res/112934268.html#112934557" class="postbtn-reply-href" name="112934557">112934xxx</a>
+<script>if('112934557' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934557]').html('112934557')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934557" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934557" class="post-message">
+<a href="/b/res/112934268.html#112934485" class="post-reply-link" data-thread="112934268" data-num="112934485">>>112934485</a><br>Ринги ахуенны
+</blockquote>
+<div id="refmap-112934557" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934580" class="post-wrapper">
+<div class="post reply " id="post-body-112934580" data-num="112934580">
+<div class="post-details" id="post-details-112934580">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934580"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 03:47:52&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934268.html#112934580">№</a><a href="/b/res/112934268.html#112934580" class="postbtn-reply-href" name="112934580">112934xxx</a>
+<script>if('112934580' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934580]').html('112934580')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934580" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934580" class="post-message">
+двач, собака, не падай
+</blockquote>
+<div id="refmap-112934580" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112931630" class="thread">
+<div id="post-112931630" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112931630" data-num="112931630">
+<div class="post-details" id="post-details-112931630">
+<input type="checkbox" name="delete" class="turnmeoff" value="112931630"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:22:10&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112931630.html#112931630">№</a><a href="/b/res/112931630.html#112931630" class="postbtn-reply-href" name="112931630">112931xxx</a>
+<script>if('112931630' != '112931xxx') {if($.cookie('makabadmin')) {$('a[name=112931630]').html('112931630')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112931630" id="fa-star112931630"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112931630"></span>
+<a class="postbtn-hide" href="#" data-num="112931630"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112931630'); return false;"></a>
+<span data-num="112931630" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112931630.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112931630/14524609302370.png">14524609302370.png</a>
+<span class="filesize">(697Кб, 900x705)</span>
+</figcaption>
+<div id="exlink-112931630-96b5e034900eaaceb7bfc24580522a21" class="image-link">
+<a href="/b/src/112931630/14524609302370.png" target="_blank" name="expandfunc" onclick="return expand('112931630-96b5e034900eaaceb7bfc24580522a21','/b/src/112931630/14524609302370.png','/b/thumb/112931630/14524609302370s.jpg',900,705,220,172)">
+<img src="/b/thumb/112931630/14524609302370s.jpg" width="220" height="172" alt="697" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112931630" class="post-message">
+Модер, дай доступ в е. Я провайдера поменял.
+</blockquote>
+<div id="refmap-112931630" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 70 постов</strong><br> 2 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112931630.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112931630">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 70 постов, 2 с картинками. Нажмите <a href="/b/res/112931630.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934534" class="post-wrapper">
+<div class="post reply " id="post-body-112934534" data-num="112934534">
+<div class="post-details" id="post-details-112934534">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934534"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:05:14&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112931630.html#112934534">№</a><a href="/b/res/112931630.html#112934534" class="postbtn-reply-href" name="112934534">112934xxx</a>
+<script>if('112934534' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934534]').html('112934534')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934534" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934534" class="post-message">
+<a href="/b/res/112931630.html#112931630" class="post-reply-link" data-thread="112931630" data-num="112931630">>>112931630 (OP)</a><br>Открыл за щеку.
+</blockquote>
+<div id="refmap-112934534" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934555" class="post-wrapper">
+<div class="post reply " id="post-body-112934555" data-num="112934555">
+<div class="post-details" id="post-details-112934555">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934555"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:27&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112931630.html#112934555">№</a><a href="/b/res/112931630.html#112934555" class="postbtn-reply-href" name="112934555">112934xxx</a>
+<script>if('112934555' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934555]').html('112934555')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934555" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934555" class="post-message">
+test<br>
+</blockquote>
+<div id="refmap-112934555" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934578" class="post-wrapper">
+<div class="post reply " id="post-body-112934578" data-num="112934578">
+<div class="post-details" id="post-details-112934578">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934578"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:35:13&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112931630.html#112934578">№</a><a href="/b/res/112931630.html#112934578" class="postbtn-reply-href" name="112934578">112934xxx</a>
+<script>if('112934578' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934578]').html('112934578')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934578" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934578" class="post-message">
+test?
+</blockquote>
+<div id="refmap-112934578" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112933078" class="thread">
+<div id="post-112933078" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112933078" data-num="112933078">
+<div class="post-details" id="post-details-112933078">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933078"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:52:23&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933078.html#112933078">№</a><a href="/b/res/112933078.html#112933078" class="postbtn-reply-href" name="112933078">112933xxx</a>
+<script>if('112933078' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933078]').html('112933078')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112933078" id="fa-star112933078"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112933078"></span>
+<a class="postbtn-hide" href="#" data-num="112933078"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112933078'); return false;"></a>
+<span data-num="112933078" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112933078.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112933078/14524627432580.jpg">14524627432580.jpg</a>
+<span class="filesize">(50Кб, 441x403)</span>
+</figcaption>
+<div id="exlink-112933078-e4b1234bd162dd8436f432e91a58fe96" class="image-link">
+<a href="/b/src/112933078/14524627432580.jpg" target="_blank" name="expandfunc" onclick="return expand('112933078-e4b1234bd162dd8436f432e91a58fe96','/b/src/112933078/14524627432580.jpg','/b/thumb/112933078/14524627432580s.jpg',441,403,220,201)">
+<img src="/b/thumb/112933078/14524627432580s.jpg" width="220" height="201" alt="50" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112933078" class="post-message">
+<strong>Хладнокровного убийства тред</strong><br>Привет, анон. Представь ситуацию. В одно прекрасное утро ты узнаешь, что тебе нужно убить невинного человека. На выполнение сего есть 24 часа. Тебе даже упростили задачу, предполагаемая жертва сидит в твоем подвале, связанная, с кляпом во рту, а на твоем журнальном столике, в свою очередь, лежит внушительный ствол. <br>Если ты не убьешь бедолагу в отведенный срок, умрешь сам, сомневаться в этом не приходится. Попробуешь как- то схитрить, тоже умрешь. Но, если ты все же свершишь богомерзкое деяние, тебе ничего не будет , ты вернешься к обычной жизни, тебя больше не потревожат, в этом тоже не приходится сомневаться.<br>Напомню, бедняга в твоем подвале ни в чем не виновен, он отец одиночка, воспитывающий в соло 2х очаровательных 7милетних близняшек. И если ты подумаешь поглядеть на него, увидишь слезы.<br>Что будешь делать, анон, и почему. <br>Хладнокровно убьешь? Как с этим жить? <br>Не пойдешь против себя? Примешь смерть от рук неизвестных злодеев? <br>А может ты бунтарь? Просто возьмешь и выпилишься.. Ствол- то вот он, протяни руку. <br>
+</blockquote>
+<div id="refmap-112933078" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 52 постов</strong><br> 1 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112933078.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112933078">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 52 постов, 1 с картинками. Нажмите <a href="/b/res/112933078.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934570" class="post-wrapper">
+<div class="post reply " id="post-body-112934570" data-num="112934570">
+<div class="post-details" id="post-details-112934570">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934570"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:27:22&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933078.html#112934570">№</a><a href="/b/res/112933078.html#112934570" class="postbtn-reply-href" name="112934570">112934xxx</a>
+<script>if('112934570' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934570]').html('112934570')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934570" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934570" class="post-message">
+<a href="/b/res/112933078.html#112933078" class="post-reply-link" data-thread="112933078" data-num="112933078">>>112933078 (OP)</a><br>Лол, блять, да если будет возможность убить любую тушку без наказания, то я даже задумываться не буду - вальну к хуям и все, даже если от этого не будет зависеть моя жизнь. Это же интересно!
+</blockquote>
+<div id="refmap-112934570" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934572" class="post-wrapper">
+<div class="post reply " id="post-body-112934572" data-num="112934572">
+<div class="post-details" id="post-details-112934572">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934572"/>
+<a href="mailto:sage" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:29:52&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933078.html#112934572">№</a><a href="/b/res/112933078.html#112934572" class="postbtn-reply-href" name="112934572">112934xxx</a>
+<script>if('112934572' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934572]').html('112934572')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934572" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934572" class="post-message">
+<a href="/b/res/112933078.html#112933078" class="post-reply-link" data-thread="112933078" data-num="112933078">>>112933078 (OP)</a><br>Давайте представим, что ОП - хуй.
+</blockquote>
+<div id="refmap-112934572" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934575" class="post-wrapper">
+<div class="post reply " id="post-body-112934575" data-num="112934575">
+<div class="post-details" id="post-details-112934575">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934575"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:30:50&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933078.html#112934575">№</a><a href="/b/res/112933078.html#112934575" class="postbtn-reply-href" name="112934575">112934xxx</a>
+<script>if('112934575' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934575]').html('112934575')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934575" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934575" class="post-message">
+<a href="/b/res/112933078.html#112934572" class="post-reply-link" data-thread="112933078" data-num="112934572">>>112934572</a><br>Зачем представлять?
+</blockquote>
+<div id="refmap-112934575" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112922264" class="thread">
+<div id="post-112922264" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112922264" data-num="112922264">
+<div class="post-details" id="post-details-112922264">
+<input type="checkbox" name="delete" class="turnmeoff" value="112922264"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 23:11:08&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922264.html#112922264">№</a><a href="/b/res/112922264.html#112922264" class="postbtn-reply-href" name="112922264">112922xxx</a>
+<script>if('112922264' != '112922xxx') {if($.cookie('makabadmin')) {$('a[name=112922264]').html('112922264')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112922264" id="fa-star112922264"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112922264"></span>
+<a class="postbtn-hide" href="#" data-num="112922264"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112922264'); return false;"></a>
+<span data-num="112922264" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112922264.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112922264/14524566682540.jpg">14524566682540.jpg</a>
+<span class="filesize">(22Кб, 384x256)</span>
+</figcaption>
+<div id="exlink-112922264-e7bbd16efa7f0951761f8ad7813baea7" class="image-link">
+<a href="/b/src/112922264/14524566682540.jpg" target="_blank" name="expandfunc" onclick="return expand('112922264-e7bbd16efa7f0951761f8ad7813baea7','/b/src/112922264/14524566682540.jpg','/b/thumb/112922264/14524566682540s.jpg',384,256,220,146)">
+<img src="/b/thumb/112922264/14524566682540s.jpg" width="220" height="146" alt="22" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112922264" class="post-message">
+<strong>Ликбез по Православию для мамкиных аметистов</strong><br><br>Привет, дорогие аноны. О себе: я кун 22 левела, живу в ДС, вырос в по настоящему религиозной семье, изучал с родителями библию, все дела. <br>Меня постоянно бомбит от всякой хуйни, когда мою религию представляют Милонов, поехавшие бабки, всю жизнь хуесосившие церковь а ныне ванаби-христиане (они как правило заучили ебучие обряды, но даже ни разу не открывали библию), и обыватели, не знающие, когда празднуется Рождество.<br>Итак, я взял 2 ключевых мифа, по которым сейчас проясню, а именно:<br>1) Христиане не делают зло, потому что &quot;Бох накажэ&quot;<br>2) Хрюсы ограничены религиозноми рамками, не то что свободные светские люди, как я<br><br><strong>1) Вопрос о религиозной этике</strong><br>Пикрилейтед схема Лауренца Кольберта <span class="spoiler">светский ученый, изучал этику</span> о формирование морали, и он структурировал 6 стадий формирование морали у человека.<br>В христианской среде они воспитываются так: &quot;не делай зло, Боженька накажет&quot; - &quot;поступай хорошо, как мы, и будешь принят в нашей среде&quot; - &quot;освой Преступление и наказание, сделай выводы&quot; - и по достижению взрослого возраста мы получаем социально сознательного человека. <br>В среде же атеистов первые два уровня скомканы и их зачастую не донести. Потому, мы имеем на атеистическом пост совке следущую картину: на уроках литры и философии в универе школьникам&#47;студентам пытаются донести сложные понятия и идеи, когда те находятся на уровне &quot;мораль для моралфагов, а я не тварь дрожащая&quot;. На выходе мы имеем взрослых людей, не способных полностью осознать роль социального контракта о неприменении зла другому. Зачаастую такии люди и живут жизнью сраного обывателя-похуиста, и лишь к 60 года выйдут на первую ступень - страха перед наказанием Бога. <br><br><strong>2) В христианстве нет свободы</strong><br>Зачастую, у человека, выросшего в христианских учениях, намного больше свобод, чем у прогрессивных атеистов. <br>Вы наверно много слушали про &quot;построй свою жизнь на прочном фундаменте - Иисусе&quot; и не понимали, что это за хрень. Под жизнью в первую очередь имеется крайне важная часть нашего восприятия мира - самооценке. <br>Моя самооценка базируется на том, хороший ли я человек, соблюдающий заветы Христа (и здесь речь не о церковных обрядах). Я поступаю хорошо - чувствую хорошо, поступаю плохо - чувствую плохо. Так жизнь легко и свободно. <br>Большенство же людей не имеет такого фундамента. Их самосознание и самооценка строятся на том, сколько у них денег, какой у них партнер, на чем они одеты. <br>Это нытье о том, что &quot;она ушла - кто я без неё&quot;, &quot;моя работа была для меня всем - теперь у меня депрессия, потому что меня уволили&quot; - это во многом проблемы падения фиксированной самооценки. <br>У меня она была всегда стабильна. Я никогда не боялся знакомиться с девушками, ведь их отказ не повлияет на моё представление о себе. Я никогда не боялся потерять денег, ведь с голоду я не помру, а без них я тот же, что и с ними. Я смотрю на жизнь моих друзей, у которых взрывается ЧСВ при нахождении крутой работы&#47;красивой женщины&#47;покупки дорогой машины, и как они боятся что либо потерять. Им легко навязывается покупка вещей, они живут пытаясь перекинуть своюсамооценку на что-то, что не упадет. Партнер - крутые вещи - машины - дом, и конечно зачастую ребенок <span class="spoiler">(овуляшки, узнаете себя).</span> <br><strong>Щах и мат, аметисты</strong><br><br>З.Ы. Я не хочу сказать, что вы все чмошники, сосите у богоподобных христиан. Есть куча совершенно обратных случаев. Но суть я думаю донес: моя позиция такова, что христианином жить как минимум проще, чем атеистом, и уж тем более атеизм не делает вас круче.
+</blockquote>
+<div id="refmap-112922264" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 51 постов</strong><br> 4 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112922264.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112922264">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 51 постов, 4 с картинками. Нажмите <a href="/b/res/112922264.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934328" class="post-wrapper">
+<div class="post reply " id="post-body-112934328" data-num="112934328">
+<div class="post-details" id="post-details-112934328">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934328"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:47:35&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922264.html#112934328">№</a><a href="/b/res/112922264.html#112934328" class="postbtn-reply-href" name="112934328">112934xxx</a>
+<script>if('112934328' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934328]').html('112934328')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934328" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934328" class="post-message">
+<a href="/b/res/112922264.html#112922264" class="post-reply-link" data-thread="112922264" data-num="112922264">>>112922264 (OP)</a><br>С какого хуя группа бородатых мужчин в рясах и с модными часами будут указывать мне как себя вести?
+</blockquote>
+<div id="refmap-112934328" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934368" class="post-wrapper">
+<div class="post reply " id="post-body-112934368" data-num="112934368">
+<div class="post-details" id="post-details-112934368">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934368"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:49:41&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922264.html#112934368">№</a><a href="/b/res/112922264.html#112934368" class="postbtn-reply-href" name="112934368">112934xxx</a>
+<script>if('112934368' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934368]').html('112934368')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934368" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934368" class="post-message">
+Оп, опиши правду и то как хорошо быть честным человеком
+</blockquote>
+<div id="refmap-112934368" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934565" class="post-wrapper">
+<div class="post reply " id="post-body-112934565" data-num="112934565">
+<div class="post-details" id="post-details-112934565">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934565"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:15:47&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112922264.html#112934565">№</a><a href="/b/res/112922264.html#112934565" class="postbtn-reply-href" name="112934565">112934xxx</a>
+<script>if('112934565' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934565]').html('112934565')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934565" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934565" class="post-message">
+Религиозная <span class="spoiler">паста</span> пропаганда на двощах, все по кельям, спешите видеть. Товарищ гундяев, идите к своему куратору к себе в церковь. В раиси церковь никогда не была отделена от государства, немножко только большевики её покоцали в 1917-1937 а во время войны спохватились что это так удобно контролировать поехавших. В СССР в церковь ходили только бабки и агенты КГБ, ни один церковный чин не назначался без согласия конторы.<br><br>поговрил с пастой
+</blockquote>
+<div id="refmap-112934565" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112925013" class="thread">
+<div id="post-112925013" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112925013" data-num="112925013">
+<div class="post-details" id="post-details-112925013">
+<input type="checkbox" name="delete" class="turnmeoff" value="112925013"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 23:31:08&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112925013.html#112925013">№</a><a href="/b/res/112925013.html#112925013" class="postbtn-reply-href" name="112925013">112925xxx</a>
+<script>if('112925013' != '112925xxx') {if($.cookie('makabadmin')) {$('a[name=112925013]').html('112925013')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112925013" id="fa-star112925013"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112925013"></span>
+<a class="postbtn-hide" href="#" data-num="112925013"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112925013'); return false;"></a>
+<span data-num="112925013" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112925013.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112925013/14524578681970.jpg">14524578681970.jpg</a>
+<span class="filesize">(923Кб, 852x871)</span>
+</figcaption>
+<div id="exlink-112925013-0a2d4c82a35c4d821f7ba018bbc692a2" class="image-link">
+<a href="/b/src/112925013/14524578681970.jpg" target="_blank" name="expandfunc" onclick="return expand('112925013-0a2d4c82a35c4d821f7ba018bbc692a2','/b/src/112925013/14524578681970.jpg','/b/thumb/112925013/14524578681970s.jpg',852,871,215,220)">
+<img src="/b/thumb/112925013/14524578681970s.jpg" width="215" height="220" alt="923" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112925013" class="post-message">
+<strong>2005 ГОД<br>@<br>ТВОИ ДРУЗЬЯ ЗАВОДЯТ ТЯН И БУХАТЬ<br>@<br>ТЫ В ДИОНЕ ИЩЕШЬ СОСКИ ПОДЕШЕВЛЕ</strong>
+</blockquote>
+<div id="refmap-112925013" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 158 постов</strong><br> 20 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112925013.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112925013">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 158 постов, 20 с картинками. Нажмите <a href="/b/res/112925013.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934482" class="post-wrapper">
+<div class="post reply " id="post-body-112934482" data-num="112934482">
+<div class="post-details" id="post-details-112934482">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934482"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:02:42&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112925013.html#112934482">№</a><a href="/b/res/112925013.html#112934482" class="postbtn-reply-href" name="112934482">112934xxx</a>
+<script>if('112934482' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934482]').html('112934482')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934482" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934482" class="post-message">
+<a href="/b/res/112925013.html#112928413" class="post-reply-link" data-thread="112925013" data-num="112928413">>>112928413</a><br>хоть я и вовер,но дико блять плюсую
+</blockquote>
+<div id="refmap-112934482" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934560" class="post-wrapper">
+<div class="post reply withimg" id="post-body-112934560" data-num="112934560">
+<div class="post-details" id="post-details-112934560">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934560"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:08:33&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112925013.html#112934560">№</a><a href="/b/res/112925013.html#112934560" class="postbtn-reply-href" name="112934560">112934xxx</a>
+<script>if('112934560' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934560]').html('112934560')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934560" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112925013/14524673137420.jpg">14524673137420.jpg</a>
+<span class="filesize">(7Кб, 223x260)</span>
+</figcaption>
+<div id="exlink-112934560-2e3e3f6dbc8bdf5a85b3e5f655227126" class="image-link">
+<a href="/b/src/112925013/14524673137420.jpg" target="_blank" name="expandfunc" onclick="return expand('112934560-2e3e3f6dbc8bdf5a85b3e5f655227126','/b/src/112925013/14524673137420.jpg','/b/thumb/112925013/14524673137420s.jpg',223,260,145,170)">
+<img src="/b/thumb/112925013/14524673137420s.jpg" width="145" height="170" alt="7" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934560" class="post-message">
+<strong>ИГРАЛ ПОЛГОДА НА X1<br>@<br>ДОКАЧАЛСЯ ДО 30-40 ЛВЛ<br>@<br>СЛОМАЛ КЛАНОВЫЙ ШМОТ</strong>
+</blockquote>
+<div id="refmap-112934560" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934564" class="post-wrapper">
+<div class="post reply " id="post-body-112934564" data-num="112934564">
+<div class="post-details" id="post-details-112934564">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934564"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:14:41&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112925013.html#112934564">№</a><a href="/b/res/112925013.html#112934564" class="postbtn-reply-href" name="112934564">112934xxx</a>
+<script>if('112934564' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934564]').html('112934564')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934564" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934564" class="post-message">
+<a href="/b/res/112925013.html#112925013" class="post-reply-link" data-thread="112925013" data-num="112925013">>>112925013 (OP)</a><br>Можно нубский вопрос?<br>А где валор?
+</blockquote>
+<div id="refmap-112934564" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112934546" class="thread">
+<div id="post-112934546" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112934546" data-num="112934546">
+<div class="post-details" id="post-details-112934546">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934546"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:01&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934546.html#112934546">№</a><a href="/b/res/112934546.html#112934546" class="postbtn-reply-href" name="112934546">112934xxx</a>
+<script>if('112934546' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934546]').html('112934546')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112934546" id="fa-star112934546"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112934546"></span>
+<a class="postbtn-hide" href="#" data-num="112934546"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112934546'); return false;"></a>
+<span data-num="112934546" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112934546.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934546/14524671617940.jpg">14524671617940.jpg</a>
+<span class="filesize">(3Кб, 112x125)</span>
+</figcaption>
+<div id="exlink-112934546-e4b1e074f24ad07ac54813b52b90221c" class="image-link">
+<a href="/b/src/112934546/14524671617940.jpg" target="_blank" name="expandfunc" onclick="return expand('112934546-e4b1e074f24ad07ac54813b52b90221c','/b/src/112934546/14524671617940.jpg','/b/thumb/112934546/14524671617940s.jpg',112,125,112,125)">
+<img src="/b/thumb/112934546/14524671617940s.jpg" width="112" height="125" alt="3" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934546" class="post-message">
+English speaker here. What does &quot;о, Япония на связи!&quot; translate to in English? Help appreciated<br><br>pic unrelated
+</blockquote>
+<div id="refmap-112934546" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<div class="hide-view">
+<a href="/b/res/112934546.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112934546">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<div id="post-112934562" class="post-wrapper">
+<div class="post reply withimg" id="post-body-112934562" data-num="112934562">
+<div class="post-details" id="post-details-112934562">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934562"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:11:44&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112934546.html#112934562">№</a><a href="/b/res/112934546.html#112934562" class="postbtn-reply-href" name="112934562">112934xxx</a>
+<script>if('112934562' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934562]').html('112934562')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934562" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112934546/14524675048180.jpg">14524675048180.jpg</a>
+<span class="filesize">(9Кб, 450x129)</span>
+</figcaption>
+<div id="exlink-112934562-cfdb13eb948d1fbac5211094cf35b380" class="image-link">
+<a href="/b/src/112934546/14524675048180.jpg" target="_blank" name="expandfunc" onclick="return expand('112934562-cfdb13eb948d1fbac5211094cf35b380','/b/src/112934546/14524675048180.jpg','/b/thumb/112934546/14524675048180s.jpg',450,129,170,48)">
+<img src="/b/thumb/112934546/14524675048180s.jpg" width="170" height="48" alt="9" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934562" class="post-message">
+<a href="/b/res/112934546.html#112934546" class="post-reply-link" data-thread="112934546" data-num="112934546">>>112934546 (OP)</a><br>Try harder m8
+</blockquote>
+<div id="refmap-112934562" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112895164" class="thread">
+<div id="post-112895164" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112895164" data-num="112895164">
+<div class="post-details" id="post-details-112895164">
+<input type="checkbox" name="delete" class="turnmeoff" value="112895164"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 19:39:31&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112895164.html#112895164">№</a><a href="/b/res/112895164.html#112895164" class="postbtn-reply-href" name="112895164">112895xxx</a>
+<script>if('112895164' != '112895xxx') {if($.cookie('makabadmin')) {$('a[name=112895164]').html('112895164')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112895164" id="fa-star112895164"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112895164"></span>
+<a class="postbtn-hide" href="#" data-num="112895164"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112895164'); return false;"></a>
+<span data-num="112895164" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112895164.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112895164/14524439716710.jpg">14524439716710.jpg</a>
+<span class="filesize">(82Кб, 1000x650)</span>
+</figcaption>
+<div id="exlink-112895164-b715fc1ce1ced231553261283ee7075c" class="image-link">
+<a href="/b/src/112895164/14524439716710.jpg" target="_blank" name="expandfunc" onclick="return expand('112895164-b715fc1ce1ced231553261283ee7075c','/b/src/112895164/14524439716710.jpg','/b/thumb/112895164/14524439716710s.jpg',1000,650,220,143)">
+<img src="/b/thumb/112895164/14524439716710s.jpg" width="220" height="143" alt="82" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112895164" class="post-message">
+Вас посетила собака-утка<br>Вас ждет удача и все чего вы хотите, но только если напишите &quot;Кря-Кря в этом треде&quot;
+</blockquote>
+<div id="refmap-112895164" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 367 постов</strong><br> 8 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112895164.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112895164">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 367 постов, 8 с картинками. Нажмите <a href="/b/res/112895164.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934525" class="post-wrapper">
+<div class="post reply " id="post-body-112934525" data-num="112934525">
+<div class="post-details" id="post-details-112934525">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934525"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:04:54&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112895164.html#112934525">№</a><a href="/b/res/112895164.html#112934525" class="postbtn-reply-href" name="112934525">112934xxx</a>
+<script>if('112934525' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934525]').html('112934525')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934525" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934525" class="post-message">
+Кря-Кря в этом треде!
+</blockquote>
+<div id="refmap-112934525" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934527" class="post-wrapper">
+<div class="post reply " id="post-body-112934527" data-num="112934527">
+<div class="post-details" id="post-details-112934527">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934527"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:04:58&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112895164.html#112934527">№</a><a href="/b/res/112895164.html#112934527" class="postbtn-reply-href" name="112934527">112934xxx</a>
+<script>if('112934527' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934527]').html('112934527')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934527" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934527" class="post-message">
+Кря-кря в этом треде
+</blockquote>
+<div id="refmap-112934527" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934554" class="post-wrapper">
+<div class="post reply " id="post-body-112934554" data-num="112934554">
+<div class="post-details" id="post-details-112934554">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934554"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:25&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112895164.html#112934554">№</a><a href="/b/res/112895164.html#112934554" class="postbtn-reply-href" name="112934554">112934xxx</a>
+<script>if('112934554' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934554]').html('112934554')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934554" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934554" class="post-message">
+Кря-Кря в этом треде
+</blockquote>
+<div id="refmap-112934554" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112901797" class="thread">
+<div id="post-112901797" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112901797" data-num="112901797">
+<div class="post-details" id="post-details-112901797">
+<input type="checkbox" name="delete" class="turnmeoff" value="112901797"/>
+<a href="mailto:Тред воспоминаний детства" class="post-email">Аноним</a>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 20:30:29&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112901797.html#112901797">№</a><a href="/b/res/112901797.html#112901797" class="postbtn-reply-href" name="112901797">112901xxx</a>
+<script>if('112901797' != '112901xxx') {if($.cookie('makabadmin')) {$('a[name=112901797]').html('112901797')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112901797" id="fa-star112901797"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112901797"></span>
+<a class="postbtn-hide" href="#" data-num="112901797"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112901797'); return false;"></a>
+<span data-num="112901797" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112901797.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112901797/14524470292780.jpg">14524470292780.jpg</a>
+<span class="filesize">(473Кб, 1069x1600)</span>
+</figcaption>
+<div id="exlink-112901797-52523d5664cb638ea6dd1849850eec30" class="image-link">
+<a href="/b/src/112901797/14524470292780.jpg" target="_blank" name="expandfunc" onclick="return expand('112901797-52523d5664cb638ea6dd1849850eec30','/b/src/112901797/14524470292780.jpg','/b/thumb/112901797/14524470292780s.jpg',1069,1600,146,220)">
+<img src="/b/thumb/112901797/14524470292780s.jpg" width="146" height="220" alt="473" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112901797" class="post-message">
+Постим интересные истории - когда нам было лет 15.<br><br>Начну со своей.<br>На одном из дней рождения отмечали у именинницы дома.<br>Пиво водка всё как положено, её родителей не было дома на несколько дней.<br>Суть в чем, именинница нажралась и уползла в свою комнату.<br>Когда почти все разбрелись по домам, у неё в гостях остался я и еще один ерохин.<br>Так как были поддатыми, пошли к ней в комнату.<br>(гёрл нейм) была в полном ауте. Трахнуть мы побоялись, но наши руки побывали у неё везде под одеждой.<br>Тянка вроде бы ничего не помнит, а может просто молчит.<br><br>По прошествии нескольких лет, дико стоит шишка на это воспоминание, хоть и есть уже девушка.<br><br>Пс. тянка была чем-то похожа на пик релейт.
+</blockquote>
+<div id="refmap-112901797" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 448 постов</strong><br> 23 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112901797.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112901797">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 448 постов, 23 с картинками. Нажмите <a href="/b/res/112901797.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934463" class="post-wrapper">
+<div class="post reply " id="post-body-112934463" data-num="112934463">
+<div class="post-details" id="post-details-112934463">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934463"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:01:57&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112901797.html#112934463">№</a><a href="/b/res/112901797.html#112934463" class="postbtn-reply-href" name="112934463">112934xxx</a>
+<script>if('112934463' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934463]').html('112934463')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934463" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934463" class="post-message">
+<a href="/b/res/112901797.html#112910689" class="post-reply-link" data-thread="112901797" data-num="112910689">>>112910689</a><br>лол, только в 17?
+</blockquote>
+<div id="refmap-112934463" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934486" class="post-wrapper">
+<div class="post reply " id="post-body-112934486" data-num="112934486">
+<div class="post-details" id="post-details-112934486">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934486"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:02:44&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112901797.html#112934486">№</a><a href="/b/res/112901797.html#112934486" class="postbtn-reply-href" name="112934486">112934xxx</a>
+<script>if('112934486' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934486]').html('112934486')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934486" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934486" class="post-message">
+<a href="/b/res/112901797.html#112933214" class="post-reply-link" data-thread="112901797" data-num="112933214">>>112933214</a><br>Тогда это многое объясняет в твоих поступках. Не ходи больше без шапки по морозу.
+</blockquote>
+<div id="refmap-112934486" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934553" class="post-wrapper">
+<div class="post reply " id="post-body-112934553" data-num="112934553">
+<div class="post-details" id="post-details-112934553">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934553"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:23&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112901797.html#112934553">№</a><a href="/b/res/112901797.html#112934553" class="postbtn-reply-href" name="112934553">112934xxx</a>
+<script>if('112934553' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934553]').html('112934553')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934553" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934553" class="post-message">
+<a href="/b/res/112901797.html#112934486" class="post-reply-link" data-thread="112901797" data-num="112934486">>>112934486</a><br>В следующий раз буду предусмотрительней
+</blockquote>
+<div id="refmap-112934553" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112933341" class="thread">
+<div id="post-112933341" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112933341" data-num="112933341">
+<div class="post-details" id="post-details-112933341">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933341"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:59:41&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933341.html#112933341">№</a><a href="/b/res/112933341.html#112933341" class="postbtn-reply-href" name="112933341">112933xxx</a>
+<script>if('112933341' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933341]').html('112933341')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112933341" id="fa-star112933341"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112933341"></span>
+<a class="postbtn-hide" href="#" data-num="112933341"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112933341'); return false;"></a>
+<span data-num="112933341" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112933341.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112933341/14524631811150.jpg">14524631811150.jpg</a>
+<span class="filesize">(19Кб, 362x266)</span>
+</figcaption>
+<div id="exlink-112933341-b3fb7fa9dba29d66b7e149667694863e" class="image-link">
+<a href="/b/src/112933341/14524631811150.jpg" target="_blank" name="expandfunc" onclick="return expand('112933341-b3fb7fa9dba29d66b7e149667694863e','/b/src/112933341/14524631811150.jpg','/b/thumb/112933341/14524631811150s.jpg',362,266,220,161)">
+<img src="/b/thumb/112933341/14524631811150s.jpg" width="220" height="161" alt="19" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112933341" class="post-message">
+Сап б, надеюсь ты достаточно ночной. Иду сегодня к тян в гости, с бутылкой вина. Как подобраться к ней, чтобы поцеловать? О чем говорить?Няша-стесняша.
+</blockquote>
+<div id="refmap-112933341" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 41 постов</strong><br> 1 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112933341.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112933341">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 41 постов, 1 с картинками. Нажмите <a href="/b/res/112933341.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934511" class="post-wrapper">
+<div class="post reply " id="post-body-112934511" data-num="112934511">
+<div class="post-details" id="post-details-112934511">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934511"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:04:00&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933341.html#112934511">№</a><a href="/b/res/112933341.html#112934511" class="postbtn-reply-href" name="112934511">112934xxx</a>
+<script>if('112934511' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934511]').html('112934511')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934511" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934511" class="post-message">
+<a href="/b/res/112933341.html#112934491" class="post-reply-link" data-thread="112933341" data-num="112934491">>>112934491</a><br>Так я по этому и спрашиваю, че ты агрессируешь?
+</blockquote>
+<div id="refmap-112934511" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934512" class="post-wrapper">
+<div class="post reply withimg" id="post-body-112934512" data-num="112934512">
+<div class="post-details" id="post-details-112934512">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934512"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:04:01&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933341.html#112934512">№</a><a href="/b/res/112933341.html#112934512" class="postbtn-reply-href" name="112934512">112934xxx</a>
+<script>if('112934512' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934512]').html('112934512')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934512" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112933341/14524670412480.jpg">14524670412480.jpg</a>
+<span class="filesize">(67Кб, 604x604)</span>
+</figcaption>
+<div id="exlink-112934512-670b496d5690df83e56408a920cee334" class="image-link">
+<a href="/b/src/112933341/14524670412480.jpg" target="_blank" name="expandfunc" onclick="return expand('112934512-670b496d5690df83e56408a920cee334','/b/src/112933341/14524670412480.jpg','/b/thumb/112933341/14524670412480s.jpg',604,604,170,170)">
+<img src="/b/thumb/112933341/14524670412480s.jpg" width="170" height="170" alt="67" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934512" class="post-message">
+<a href="/b/res/112933341.html#112933341" class="post-reply-link" data-thread="112933341" data-num="112933341">>>112933341 (OP)</a><br>Аноны, рейтаните ОПа.
+</blockquote>
+<div id="refmap-112934512" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934552" class="post-wrapper">
+<div class="post reply " id="post-body-112934552" data-num="112934552">
+<div class="post-details" id="post-details-112934552">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934552"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:17&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933341.html#112934552">№</a><a href="/b/res/112933341.html#112934552" class="postbtn-reply-href" name="112934552">112934xxx</a>
+<script>if('112934552' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934552]').html('112934552')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934552" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934552" class="post-message">
+<a href="/b/res/112933341.html#112934512" class="post-reply-link" data-thread="112933341" data-num="112934512">>>112934512</a><br><a href="/b/res/112933341.html#112934512" class="post-reply-link" data-thread="112933341" data-num="112934512">>>112934512</a><br>Унеси это отсюда.
+</blockquote>
+<div id="refmap-112934552" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112918473" class="thread">
+<div id="post-112918473" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112918473" data-num="112918473">
+<div class="post-details" id="post-details-112918473">
+<input type="checkbox" name="delete" class="turnmeoff" value="112918473"/>
+<span class="ananimas">Аноним</span>
+<span class="ophui"># OP</span>&nbsp;
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 22:44:07&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112918473.html#112918473">№</a><a href="/b/res/112918473.html#112918473" class="postbtn-reply-href" name="112918473">112918xxx</a>
+<script>if('112918473' != '112918xxx') {if($.cookie('makabadmin')) {$('a[name=112918473]').html('112918473')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112918473" id="fa-star112918473"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112918473"></span>
+<a class="postbtn-hide" href="#" data-num="112918473"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112918473'); return false;"></a>
+<span data-num="112918473" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112918473.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112918473/14524550473040.jpg">14524550473040.jpg</a>
+<span class="filesize">(165Кб, 700x928)</span>
+</figcaption>
+<div id="exlink-112918473-cb46f8eebe983d470774d8fd2898a86c" class="image-link">
+<a href="/b/src/112918473/14524550473040.jpg" target="_blank" name="expandfunc" onclick="return expand('112918473-cb46f8eebe983d470774d8fd2898a86c','/b/src/112918473/14524550473040.jpg','/b/thumb/112918473/14524550473040s.jpg',700,928,165,220)">
+<img src="/b/thumb/112918473/14524550473040s.jpg" width="165" height="220" alt="165" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112918473" class="post-message">
+Предлагаю немного пофантазировать.<br>Представим, что каждому половозрелому человеку выдают секс-робота. Робот с настраиваемой внешностью и поведением, на ощупь не отличишь от настоящего тела. Соответственно секс с ним просто 10&#47;10.<br>Как изменилось бы общество и взаимотношения внутри него? Как изменилась бы ваша жизнь?<br>Ну и конечно же, какую внешность вы придали бы своему роботу, как запрогаммировали его поведение?
+</blockquote>
+<div id="refmap-112918473" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 315 постов</strong><br> 38 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112918473.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112918473">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 315 постов, 38 с картинками. Нажмите <a href="/b/res/112918473.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112933724" class="post-wrapper">
+<div class="post reply " id="post-body-112933724" data-num="112933724">
+<div class="post-details" id="post-details-112933724">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933724"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 01:16:24&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112918473.html#112933724">№</a><a href="/b/res/112918473.html#112933724" class="postbtn-reply-href" name="112933724">112933xxx</a>
+<script>if('112933724' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933724]').html('112933724')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112933724" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112933724" class="post-message">
+<a href="/b/res/112918473.html#112918473" class="post-reply-link" data-thread="112918473" data-num="112918473">>>112918473 (OP)</a><br>Мне похуй.
+</blockquote>
+<div id="refmap-112933724" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934481" class="post-wrapper">
+<div class="post reply " id="post-body-112934481" data-num="112934481">
+<div class="post-details" id="post-details-112934481">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934481"/>
+<span class="ananimas">Аноним</span>
+<span class="ophui"># OP</span>&nbsp;
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:02:36&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112918473.html#112934481">№</a><a href="/b/res/112918473.html#112934481" class="postbtn-reply-href" name="112934481">112934xxx</a>
+<script>if('112934481' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934481]').html('112934481')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934481" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112918473/14524669569060.jpg">14524669569060.jpg</a>
+<span class="filesize">(54Кб, 700x560)</span>
+</figcaption>
+<div id="exlink-112934481-8741595c5bea3beedbe7ca2604cea348" class="image-link">
+<a href="/b/src/112918473/14524669569060.jpg" target="_blank" name="expandfunc" onclick="return expand('112934481-8741595c5bea3beedbe7ca2604cea348','/b/src/112918473/14524669569060.jpg','/b/thumb/112918473/14524669569060s.jpg',700,560,170,136)">
+<img src="/b/thumb/112918473/14524669569060s.jpg" width="170" height="136" alt="54" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934481" class="post-message">
+</blockquote>
+<div id="refmap-112934481" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934551" class="post-wrapper">
+<div class="post reply " id="post-body-112934551" data-num="112934551">
+<div class="post-details" id="post-details-112934551">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934551"/>
+<span class="ananimas">Аноним</span>
+<span class="ophui"># OP</span>&nbsp;
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:14&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112918473.html#112934551">№</a><a href="/b/res/112918473.html#112934551" class="postbtn-reply-href" name="112934551">112934xxx</a>
+<script>if('112934551' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934551]').html('112934551')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934551" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112918473/14524671741760.jpg">14524671741760.jpg</a>
+<span class="filesize">(59Кб, 700x637)</span>
+</figcaption>
+<div id="exlink-112934551-96b897f34e21fe3277dfb62802a60ebc" class="image-link">
+<a href="/b/src/112918473/14524671741760.jpg" target="_blank" name="expandfunc" onclick="return expand('112934551-96b897f34e21fe3277dfb62802a60ebc','/b/src/112918473/14524671741760.jpg','/b/thumb/112918473/14524671741760s.jpg',700,637,170,154)">
+<img src="/b/thumb/112918473/14524671741760s.jpg" width="170" height="154" alt="59" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112934551" class="post-message">
+</blockquote>
+<div id="refmap-112934551" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112933212" class="thread">
+<div id="post-112933212" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112933212" data-num="112933212">
+<div class="post-details" id="post-details-112933212">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933212"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:55:26&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933212.html#112933212">№</a><a href="/b/res/112933212.html#112933212" class="postbtn-reply-href" name="112933212">112933xxx</a>
+<script>if('112933212' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933212]').html('112933212')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112933212" id="fa-star112933212"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112933212"></span>
+<a class="postbtn-hide" href="#" data-num="112933212"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112933212'); return false;"></a>
+<span data-num="112933212" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112933212.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112933212/14524629260740.jpg">14524629260740.jpg</a>
+<span class="filesize">(163Кб, 400x1068)</span>
+</figcaption>
+<div id="exlink-112933212-27451162d3f41333ff8663b486d89443" class="image-link">
+<a href="/b/src/112933212/14524629260740.jpg" target="_blank" name="expandfunc" onclick="return expand('112933212-27451162d3f41333ff8663b486d89443','/b/src/112933212/14524629260740.jpg','/b/thumb/112933212/14524629260740s.jpg',400,1068,82,220)">
+<img src="/b/thumb/112933212/14524629260740s.jpg" width="82" height="220" alt="163" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112933212" class="post-message">
+Ну что, анон, как прошли праздники?<br>Мы первые два дня нового года зависали в моей квартире. Пили, курили и балагурили. А эти два дня провели на даче у друга, почти той же компанией. Некоторые из нас, включая меня, поехали кататься на сноуборде, а потом мы вернулись и просто веселились с друзьями, играли в разные игрули, говорили и пытались согреться в сауне. Было очень круто! Хоть и довольно холодно.
+</blockquote>
+<div id="refmap-112933212" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob">Пропущено 4 постов.</span>
+<div class="hide-view">
+<a href="/b/res/112933212.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112933212">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 4 постов. Нажмите <a href="/b/res/112933212.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112934519" class="post-wrapper">
+<div class="post reply " id="post-body-112934519" data-num="112934519">
+<div class="post-details" id="post-details-112934519">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934519"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:04:35&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933212.html#112934519">№</a><a href="/b/res/112933212.html#112934519" class="postbtn-reply-href" name="112934519">112934xxx</a>
+<script>if('112934519' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934519]').html('112934519')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934519" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934519" class="post-message">
+бамп
+</blockquote>
+<div id="refmap-112934519" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934530" class="post-wrapper">
+<div class="post reply " id="post-body-112934530" data-num="112934530">
+<div class="post-details" id="post-details-112934530">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934530"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:05:04&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933212.html#112934530">№</a><a href="/b/res/112933212.html#112934530" class="postbtn-reply-href" name="112934530">112934xxx</a>
+<script>if('112934530' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934530]').html('112934530')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934530" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934530" class="post-message">
+бамп
+</blockquote>
+<div id="refmap-112934530" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934550" class="post-wrapper">
+<div class="post reply " id="post-body-112934550" data-num="112934550">
+<div class="post-details" id="post-details-112934550">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934550"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:11&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112933212.html#112934550">№</a><a href="/b/res/112933212.html#112934550" class="postbtn-reply-href" name="112934550">112934xxx</a>
+<script>if('112934550' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934550]').html('112934550')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934550" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934550" class="post-message">
+бамп
+</blockquote>
+<div id="refmap-112934550" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+<div id="thread-112910493" class="thread">
+<div id="post-112910493" class="oppost-wrapper">
+<div class="post oppost" id="post-body-112910493" data-num="112910493">
+<div class="post-details" id="post-details-112910493">
+<input type="checkbox" name="delete" class="turnmeoff" value="112910493"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">10/01/16 Вск 21:44:16&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112910493.html#112910493">№</a><a href="/b/res/112910493.html#112910493" class="postbtn-reply-href" name="112910493">112910xxx</a>
+<script>if('112910493' != '112910xxx') {if($.cookie('makabadmin')) {$('a[name=112910493]').html('112910493')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<i title="Добавить в избранное" class="fa fa-star-o postbtn-favorite" data-num="112910493" id="fa-star112910493"></i>
+<span class="loice-bar loice-bar-empty " id="loice-bar112910493"></span>
+<a class="postbtn-hide" href="#" data-num="112910493"></a>
+<a class="postbtn-exp" href="#" onclick="expandThread('112910493'); return false;"></a>
+<span data-num="112910493" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+&nbsp;
+</span>
+<span class="desktop"> [<a class="orange" href="/b/res/112910493.html">Ответ</a>]</span>
+<br class="turnmeoff">
+</div>
+<div class="images images-single">
+<figure class="image">
+<figcaption class="file-attr">
+<a class="desktop" target="_blank" href="/b/src/112910493/14524514564170.jpg">14524514564170.jpg</a>
+<span class="filesize">(22Кб, 588x178)</span>
+</figcaption>
+<div id="exlink-112910493-af4def2b277fb1cb78515403a3de4d71" class="image-link">
+<a href="/b/src/112910493/14524514564170.jpg" target="_blank" name="expandfunc" onclick="return expand('112910493-af4def2b277fb1cb78515403a3de4d71','/b/src/112910493/14524514564170.jpg','/b/thumb/112910493/14524514564170s.jpg',588,178,220,66)">
+<img src="/b/thumb/112910493/14524514564170s.jpg" width="220" height="66" alt="22" class="img preview ">
+</a>
+</div>
+</figure>
+</div>
+<blockquote id="m112910493" class="post-message">
+привет, анон, мне пизда.<br>В общем дело было так. Проснулся я утром на вписке, примерно часа в 9 утра. Все валяются пьяные, спя, ну я решил воспользоваться моментом и немного развлечься. Лежало 3 спящих тян, я достал свой член и поводил им по губам, двоим кончил на лицо, лег спать, будто нихуя не произошло, потом встал примерно в 12, уже все проснулись, никто меня не заподозрил, и о моих заслугах не прознал, тянки вели себя как обычно. Вечером вот сейчас уже мне пишет ебырь одной из тех тян, пикрил. что делать аноны?
+</blockquote>
+<div id="refmap-112910493" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+<div class="oppost-options-mob mobile">
+<span class="mess-post-mob"><strong>Пропущено 442 постов</strong><br> 25 с картинками.</span>
+<div class="hide-view">
+<a href="/b/res/112910493.html" class="button-mob">В тред</a>
+<a class="button-mob postbtn-hide-mob" data-num="112910493">Скрыть</a>
+</div>
+</div>
+</div>
+</div>
+<span class="mess-post desktop">Пропущено 442 постов, 25 с картинками. Нажмите <a href="/b/res/112910493.html">ответ</a>, чтобы посмотреть.</span>
+<div id="post-112933168" class="post-wrapper">
+<div class="post reply " id="post-body-112933168" data-num="112933168">
+<div class="post-details" id="post-details-112933168">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933168"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:54:36&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112910493.html#112933168">№</a><a href="/b/res/112910493.html#112933168" class="postbtn-reply-href" name="112933168">112933xxx</a>
+<script>if('112933168' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933168]').html('112933168')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112933168" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112933168" class="post-message">
+ОП, деанонь Ероху и его тян.
+</blockquote>
+<div id="refmap-112933168" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112933266" class="post-wrapper">
+<div class="post reply " id="post-body-112933266" data-num="112933266">
+<div class="post-details" id="post-details-112933266">
+<input type="checkbox" name="delete" class="turnmeoff" value="112933266"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 00:57:03&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112910493.html#112933266">№</a><a href="/b/res/112910493.html#112933266" class="postbtn-reply-href" name="112933266">112933xxx</a>
+<script>if('112933266' != '112933xxx') {if($.cookie('makabadmin')) {$('a[name=112933266]').html('112933266')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112933266" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112933266" class="post-message">
+<a href="/b/res/112910493.html#112915118" class="post-reply-link" data-thread="112910493" data-num="112915118">>>112915118</a><br>Двачую этого
+</blockquote>
+<div id="refmap-112933266" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+<div id="post-112934547" class="post-wrapper">
+<div class="post reply " id="post-body-112934547" data-num="112934547">
+<div class="post-details" id="post-details-112934547">
+<input type="checkbox" name="delete" class="turnmeoff" value="112934547"/>
+<span class="ananimas">Аноним</span>
+<span class="posttime-reflink">
+<span class="posttime">11/01/16 Пнд 02:06:07&nbsp;</span>
+<span class="reflink">
+<a href="/b/res/112910493.html#112934547">№</a><a href="/b/res/112910493.html#112934547" class="postbtn-reply-href" name="112934547">112934xxx</a>
+<script>if('112934547' != '112934xxx') {if($.cookie('makabadmin')) {$('a[name=112934547]').html('112934547')} }</script>
+</span>
+</span>
+<span class="postpanel desktop">
+<span data-num="112934547" class="postbtn-options" title="Опции поста"></span>
+ 
+<a class="postbtn-adm" style="display:none" href="#" onclick="addAdminMenu(this); return false;" onmouseout="removeAdminMenu(event); return false;"></a>
+</span>
+<br class="turnmeoff">
+</div>
+<blockquote id="m112934547" class="post-message">
+<a href="/b/res/112910493.html#112910493" class="post-reply-link" data-thread="112910493" data-num="112910493">>>112910493 (OP)</a><br>Про дурака включи и всё
+</blockquote>
+<div id="refmap-112934547" class="ABU-refmap" style="display: none;"><em>Ответы: </em></div>
+</div>
+</div>
+</div>
+<hr>
+</form>
+</section>
+<div id="unban-div" class="settings-wrap" style="display:none;">
+<a href="#" id="setclose" onclick="UnbanHide(this); return false;"></a>
+<div class="title">Запрос разбана</div>
+<form id="unban-form">
+<div class="rowelems">
+<label for="unban-ban-num-input">Номер бана:</label>
+<input type="text" id="unban-ban-num-input" value="" autocomplete="off"/>
+</div>
+<div class="rowelems">
+<label for="unban-comment-input">Замечательная история его получения:</label>
+<textarea rows="6" cols="45" id="unban-comment-input"></textarea>
+</div>
+<div class="rowelems">
+<input name="2chaptcha_id" value="" type="hidden" id="unban-captcha-val">
+<div id="unban-captcha-div"></div>
+<label for="unban-ban-num-input">Введите капчу:</label>
+<input type="text" id="unban-captcha-input" value="" autocomplete="off"/>
+</div>
+<div class="setbuttons"><input type="submit" onclick="UnbanSubmit(); return false;" value="Отправить запрос"></div>
+</form>
+</div>
+</div>
+<footer class="footer">
+<div class="norm-reply">
+<div class="reply-label-wrapper">
+<span class="desktop">[<span id="BottomNormalReplyLabel" class="reply-label reply-label-bot">Создать тред</span>]</span>
+</div>
+<span id="BottomNormalReplyLabel" class="reply-label button-mob mobile reply-label-bot">Создать тред</span>
+<div id="BottomNormalReply" class="BottomNormalReply"></div>
+</div>
+<hr class="pre-rekl">
+<section class="rekl">
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+ 
+<div class="vk-group"><div id="vk_groups"></div></div>
+<script type="text/javascript">
+					if(window.VK)VK.Widgets.Group("vk_groups", {mode: 1, width: "468", height: "60", color1: 'FFFFFF', color2: '000000', color3: 'A8A8A8'}, 22751485);
+				</script>
+ 
+</section>
+<hr>
+<div class="pager">
+[<strong>0</strong>]
+[<a href="/b/1.html">1</a>]
+[<a href="/b/2.html">2</a>]
+[<a href="/b/3.html">3</a>]
+[<a href="/b/4.html">4</a>]
+[<a href="/b/5.html">5</a>]
+|
+<a href="/b/1.html" class="mobile button-mob">Следующая</a>
+<a href="/b/1.html" class="button">Следующая</a>
+|
+<a href="/b/catalog.html" class="button" target="_blank">Каталог</a>
+</div>
+<div class="desktop adminbar-bottom" id="adminbar">
+<div class="rmenu" id="boardNavBottom">
+<span class="nowrap">Тематика&nbsp;[<a title="автомобили и транспорт" href="/au/">au</a> / <a title="велосипеды" href="/bi/">bi</a> / <a title="бизнес" href="/biz/">biz</a> / <a title="книги" href="/bo/">bo</a> / <a title="комиксы и мультфильмы" href="/c/">c</a> / <a title="другие страны и туризм" href="/em/">em</a> / <a title="мода и стиль" href="/fa/">fa</a> / <a title="физкультура" href="/fiz/">fiz</a> / <a title="иностранные языки" href="/fl/">fl</a> / <a title="футбол" href="/ftb/">ftb</a> / <a title="hip-hop" href="/hh/">hh</a> / <a title="история" href="/hi/">hi</a> / <a title="медицина" href="/me/">me</a> / <a title="магия" href="/mg/">mg</a> / <a title="my little pony" href="/mlp/">mlp</a> / <a title="мотоциклы" href="/mo/">mo</a> / <a title="Фильмы" href="/mov/">mov</a> / <a title="музыка" href="/mu/">mu</a> / <a title="животные и природа" href="/ne/">ne</a> / <a title="психология" href="/psy/">psy</a> / <a title="религия и философия" href="/re/">re</a> / <a title="наука" href="/sci/">sci</a> / <a title="научная фантастика" href="/sf/">sf</a> / <a title="паранормальные явления" href="/sn/">sn</a> / <a title="спорт" href="/sp/">sp</a> / <a title="космос и астрономия" href="/spc/">spc</a> / <a title="тв и кино" href="/tv/">tv</a> / <a title="образование" href="/un/">un</a> / <a title="оружие" href="/w/">w</a> / <a title="warhammer" href="/wh/">wh</a> / <a title="военная техника и оружие" href="/wm/">wm</a> / <a title="обои и высокое разрешение" href="/wp/">wp</a>]</span>
+<span class="nowrap">Творчество&nbsp;[<a title="столовая" href="/di/">di</a> / <a title="хобби" href="/diy/">diy</a> / <a title="музыканты" href="/mus/">mus</a> / <a title="живопись" href="/pa/">pa</a> / <a title="фото" href="/p/">p</a> / <a title="Работа и карьера" href="/wrk/">wrk</a>] </span>
+<span class="nowrap">Техника и софт&nbsp;[<a title="gamedev" href="/gd/">gd</a> / <a title="компьютерное железо" href="/hw/">hw</a> / <a title="мобильные устройства и приложения" href="/mobi/">mobi</a> / <a title="программирование" href="/pr/">pr</a> / <a title="радиотехника" href="/ra/">ra</a> / <a title="программы" href="/s/">s</a> / <a title="техника" href="/t/">t</a>]</span>
+<span class="nowrap">Игры&nbsp;[<a title="настольные игры" href="/bg/">bg</a> / <a title="консоли" href="/cg/">cg</a> / <a title="Бесконечное лето" href="/es/">es</a> / <a title="the elder scrolls" href="/tes/">tes</a> / <a title="video games" href="/v/">v</a> / <a title="video games general" href="/vg/">vg</a> / <a title="Текстовые авторские рпг" href="/wr/">wr</a>]</span>
+<span class="nowrap">Японская культура&nbsp;[<a title="аниме" href="/a/">a</a> / <a title="фэндом" href="/fd/">fd</a> / <a title="японская культура" href="/ja/">ja</a> / <a title="манга" href="/ma/">ma</a> / <a title="визуальные новеллы" href="/vn/">vn</a>]</span>
+<span class="nowrap">Разное&nbsp;[<a title="дискуссии о два.ч" href="/d/">d</a> / <a title="бред" href="/b/">b</a> / <a title="общение" href="/soc/">soc</a> / <a title="анимация" href="/media/">media</a> / <a title="просьбы" href="/r/">r</a> / <a title="здесь живет абу" href="/abu/">abu</a> / <a title="Убежище" href="/rf/">rf</a> / <a title="2ch tv" href="http://tehtube.tv/">Тивач</a> ]</span>
+<span class="nowrap">Взрослым&nbsp;[<a title="трапы" href="/fg/">fg</a> / <a title="фурри" href="/fur/">fur</a> / <a title="хорошие девушки" href="/gg/">gg</a> / <a title="геи" href="/ga/">ga</a> / <a title="хентай" href="/h/">h</a> / <a title="прочий хентай" href="/ho/">ho</a> / <a title="hardcore" href="/hc/">hc</a> / <a title="extreme pron" href="/e/">e</a> / <a title="фетиш" href="/fet/">fet</a> / <a title="секс и отношения" href="/sex/">sex</a> / <a title="фагготрия" href="/fag/">fag</a>]</span>
+<span class="nowrap">Политика&nbsp;[<a title="Политика" href="/po/">po</a> / <a title="новости" href="/news/">news</a>]</span>
+<span class="nowrap">[&nbsp;<a title="Юзердоски" href="/userboards.html" target="_blank">Прочие доски</a>&nbsp;]</span>
+</div>
+<hr>
+</div>
+<section class="board-info">
+<div class="board-speed">[Скорость борды: 15 п./час]</div>
+<br>Все права и копирайты на этой странице принадлежат правообладателям. За любую размещенную информацию несет личную ответственность постер (лицо, загрузившее эту информацию). Все комментарии принадлежат лицам, отправившим их.<br>
+Если вы обнаружили информацию, размещённую против правил, пожалуйста, <a href="mailto:admin@2ch.hk">сообщите нам</a> об этом.<br><br> Зеркала Двача: 2ch.hk, 2ch.pm, 2ch.re, 2ch.tf, 2ch.wf, 2ch.yt, 2-ch.so </p>
+ <script type="text/javascript">document.write("<a href='//www.liveinternet.ru/click' target=_blank><img src='//counter.yadro.ru/hit?t26.2;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ";u" + escape(document.URL) +";h"+escape(document.title.substring(0,80)) +  ";" + Math.random() + "' border=0 width=88 height=15 alt='' title='LiveInternet: показано число посетителей за сегодня'><\/a>")</script> 
+<div align="right"><script type="text/javascript">fastload();</script></div>
+</section>
+</footer>
+<div class="up-nav-arrow nav-arrows" id="up-nav-arrow"></div>
+<div class="down-nav-arrow nav-arrows" id="down-nav-arrow"></div>
+<div id="media-thumbnail"></div>
+<div class="boardstats" id="boardstats-box">
+<div class="boardstats-header" id="boardstats-header">
+Топ тредов
+<i class="fa fa-angle-double-down " id="boardstats-arrow-down"></i>
+</div>
+<div id="boardstats-table">
+</div>
+<div class="boardstats-header-update">
+<i class="fa fa-refresh update-stats-box"></i>
+<i class="fa fa-spinner update-stats-box-updating"></i>
+</div>
+</div>
+ 
+</body>
+</html>
