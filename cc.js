@@ -72,7 +72,7 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
       while (tmp$4.hasNext()) {
         var element_1 = tmp$4.next();
         var hideButton = element_1.getElementsByClassName('postbtn-hide')[0];
-        (hideButton != null ? hideButton : Kotlin.throwNPE()).dispatchEvent(document.createEvent('click'));
+        hideButton != null ? hideButton.dispatchEvent(document.createEvent('MouseEvents')) : null;
       }
     }
   });
