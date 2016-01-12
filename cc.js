@@ -71,8 +71,10 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
       tmp$4 = destination.iterator();
       while (tmp$4.hasNext()) {
         var element_1 = tmp$4.next();
-        var hideButton = element_1.getElementsByClassName('postbtn-hide')[0];
-        hideButton != null ? hideButton.dispatchEvent(document.createEvent('MouseEvents')) : null;
+        var tmp$5;
+        var clickEvent = document.createEvent('MouseEvents');
+        clickEvent.initEvent('click', true, true);
+        (tmp$5 = element_1.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$5.dispatchEvent(clickEvent) : null;
       }
     }
   });
