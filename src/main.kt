@@ -8,13 +8,16 @@ import kotlin.text.Regex
 import kotlin.text.RegexOption
 
 fun main(args: Array<String>) {
-    window.onload = {
-        document
-            .getElementsByClassName("thread").asList()
-            .filter {
-                val text = it.getElementsByClassName("post-message")[0]?.textContent ?: ""
-                StopWords.items.any { it.containsMatchIn(text) }
-            }
-            .forEach { it.hidden = true }
-    }
+    if (document.readyState == "complete") filter()
+    else window.onload = { filter() }
+}
+
+private fun filter() {
+    document
+        .getElementsByClassName("thread").asList()
+        .filter {
+            val text = it.getElementsByClassName("post-message")[0]?.textContent ?: ""
+            StopWords.items.any { it.containsMatchIn(text) }
+        }
+        .forEach { it.hidden = true }
 }
