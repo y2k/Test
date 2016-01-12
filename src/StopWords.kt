@@ -7,6 +7,7 @@ import kotlin.text.RegexOption
 object StopWords {
 
     val items = listOf(
+        "захвата европы тред",
         "ебанутых поступков анона",
         "ты не доживешь до \\d+ год",
         "набора веса тред",
