@@ -4,8 +4,6 @@
 import kotlin.browser.document
 import kotlin.browser.window
 import kotlin.dom.asList
-import kotlin.text.Regex
-import kotlin.text.RegexOption
 
 fun main(args: Array<String>) {
     if (document.readyState == "complete") filter()
@@ -19,5 +17,9 @@ private fun filter() {
             val text = it.getElementsByClassName("post-message")[0]?.textContent ?: ""
             StopWords.items.any { it.containsMatchIn(text) }
         }
-        .forEach { it.hidden = true }
+        .forEach {
+            val clickEvent = document.createEvent("MouseEvents")
+            clickEvent.initEvent("click", true, true);
+            it.getElementsByClassName("postbtn-hide")[0]?.dispatchEvent(clickEvent)
+        }
 }
