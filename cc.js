@@ -90,7 +90,7 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
           while (tmp$8.hasNext()) {
             var element_3 = tmp$8.next();
             var tmp$7;
-            if (Kotlin.equals((tmp$7 = element_3.attributes['href']) != null ? tmp$7.value : null, 'mailto:href')) {
+            if (Kotlin.equals((tmp$7 = element_3.attributes['href']) != null ? tmp$7.value : null, 'mailto:sage')) {
               filter$f_1$result = true;
               break filter$f_1$break;
             }

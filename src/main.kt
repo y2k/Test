@@ -27,7 +27,7 @@ private fun filter() {
         .getElementsByClassName("post-wrapper").asList()
         .filter {
             it.getElementsByClassName("post-email").asList()
-                .any { it.attributes["href"]?.value == "mailto:href" }
+                .any { it.attributes["href"]?.value == "mailto:sage" }
         }
         .map { it.id.replace("post-", "") }
         .forEach {
