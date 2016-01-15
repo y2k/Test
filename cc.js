@@ -82,39 +82,36 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
       tmp$6 = $receiver_0.iterator();
       while (tmp$6.hasNext()) {
         var element_2 = tmp$6.next();
-        var filter$f_1$result;
-        filter$f_1$break: {
-          var $receiver_1 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(element_2.getElementsByClassName('post-email'));
-          var tmp$8;
-          tmp$8 = $receiver_1.iterator();
-          while (tmp$8.hasNext()) {
-            var element_3 = tmp$8.next();
-            var tmp$7;
-            if (Kotlin.equals((tmp$7 = element_3.attributes['href']) != null ? tmp$7.value : null, 'mailto:sage')) {
-              filter$f_1$result = true;
-              break filter$f_1$break;
-            }
-          }
-          filter$f_1$result = false;
-        }
-        if (filter$f_1$result) {
+        if (Kotlin.modules['stdlib'].kotlin.text.startsWith_41xvrb$(element_2.id, 'post-') && _.isSage(element_2)) {
           destination_0.add_za3rmp$(element_2);
         }
       }
       var destination_1 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$(destination_0, 10));
-      var tmp$9;
-      tmp$9 = destination_0.iterator();
-      while (tmp$9.hasNext()) {
-        var item = tmp$9.next();
+      var tmp$7;
+      tmp$7 = destination_0.iterator();
+      while (tmp$7.hasNext()) {
+        var item = tmp$7.next();
         destination_1.add_za3rmp$(Kotlin.modules['stdlib'].kotlin.text.replace_dn5w6f$(item.id, 'post-', ''));
       }
-      var tmp$10;
-      tmp$10 = destination_1.iterator();
-      while (tmp$10.hasNext()) {
-        var element_4 = tmp$10.next();
-        console.log('HIDE | ' + element_4);
-        Post(element_4).hide(true);
+      var tmp$8;
+      tmp$8 = destination_1.iterator();
+      while (tmp$8.hasNext()) {
+        var element_3 = tmp$8.next();
+        Post(element_3).hide(true);
       }
+    },
+    isSage: function (thread) {
+      var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(thread.getElementsByClassName('post-email'));
+      var tmp$0;
+      tmp$0 = $receiver.iterator();
+      while (tmp$0.hasNext()) {
+        var element = tmp$0.next();
+        var tmp$1;
+        if (Kotlin.equals((tmp$1 = element.attributes['href']) != null ? tmp$1.value : null, 'mailto:sage')) {
+          return true;
+        }
+      }
+      return false;
     }
   });
   Kotlin.defineModule('ChanCleaner', _);

@@ -1,6 +1,7 @@
 /**
  * Created by y2k on 1/10/16.
  */
+import org.w3c.dom.HTMLElement
 import kotlin.browser.document
 import kotlin.browser.window
 import kotlin.dom.asList
@@ -25,15 +26,13 @@ private fun filter() {
 
     document
         .getElementsByClassName("post-wrapper").asList()
-        .filter {
-            it.getElementsByClassName("post-email").asList()
-                .any { it.attributes["href"]?.value == "mailto:sage" }
-        }
+        .filter { it.id.startsWith("post-") && isSage(it) }
         .map { it.id.replace("post-", "") }
-        .forEach {
+        .forEach { js("Post(it).hide(true)") }
+}
 
-            console.log("HIDE | $it")
-
-            js("Post(it).hide(true)")
-        }
+private fun isSage(thread: HTMLElement): Boolean {
+    return thread
+        .getElementsByClassName("post-email").asList()
+        .any { it.attributes["href"]?.value == "mailto:sage" }
 }
