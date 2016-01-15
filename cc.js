@@ -107,7 +107,7 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
       while (tmp$0.hasNext()) {
         var element = tmp$0.next();
         var tmp$1;
-        if (Kotlin.equals((tmp$1 = element.attributes['href']) != null ? tmp$1.value : null, 'mailto:sage')) {
+        if (Kotlin.modules['stdlib'].kotlin.text.equals_41xvrb$('mailto:sage', (tmp$1 = element.attributes['href']) != null ? tmp$1.value : null, true)) {
           return true;
         }
       }

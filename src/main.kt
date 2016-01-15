@@ -34,5 +34,5 @@ private fun filter() {
 private fun isSage(thread: HTMLElement): Boolean {
     return thread
         .getElementsByClassName("post-email").asList()
-        .any { it.attributes["href"]?.value == "mailto:sage" }
+        .any { "mailto:sage".equals(it.attributes["href"]?.value, true) }
 }
