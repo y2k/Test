@@ -112,6 +112,7 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
       tmp$10 = destination_1.iterator();
       while (tmp$10.hasNext()) {
         var element_4 = tmp$10.next();
+        console.log('HIDE | ' + element_4);
         Post(element_4).hide(true);
       }
     }

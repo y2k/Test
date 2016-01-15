@@ -22,4 +22,18 @@ private fun filter() {
             clickEvent.initEvent("click", true, true);
             it.getElementsByClassName("postbtn-hide")[0]?.dispatchEvent(clickEvent)
         }
+
+    document
+        .getElementsByClassName("post-wrapper").asList()
+        .filter {
+            it.getElementsByClassName("post-email").asList()
+                .any { it.attributes["href"]?.value == "mailto:href" }
+        }
+        .map { it.id.replace("post-", "") }
+        .forEach {
+
+            console.log("HIDE | $it")
+
+            js("Post(it).hide(true)")
+        }
 }
