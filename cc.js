@@ -99,6 +99,13 @@ e}),FetchEventInit_b3bcq8$:t.defineInlineFunction("stdlib.org.w3c.workers.FetchE
         var element_3 = tmp$8.next();
         Post(element_3).hide(true);
       }
+      var $receiver_1 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('spoiler'));
+      var tmp$9;
+      tmp$9 = $receiver_1.iterator();
+      while (tmp$9.hasNext()) {
+        var element_4 = tmp$9.next();
+        element_4.style.color = '#a0a0a0';
+      }
     },
     isSage: function (thread) {
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(thread.getElementsByClassName('post-email'));

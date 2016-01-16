@@ -29,6 +29,10 @@ private fun filter() {
         .filter { it.id.startsWith("post-") && isSage(it) }
         .map { it.id.replace("post-", "") }
         .forEach { js("Post(it).hide(true)") }
+
+    document
+        .getElementsByClassName("spoiler").asList()
+        .forEach { it.style.color = "#a0a0a0" }
 }
 
 private fun isSage(thread: HTMLElement): Boolean {
