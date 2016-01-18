@@ -88,14 +88,13 @@
         destination_2.add_za3rmp$(new _.Message(item_0));
       }
       var messages = destination_2;
-      var root = {v: (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE()};
+      var root = (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE();
       var $receiver_3 = Kotlin.modules['stdlib'].kotlin.collections.sorted_77rvyy$(messages);
       var tmp$12;
       tmp$12 = $receiver_3.iterator();
       while (tmp$12.hasNext()) {
         var element_5 = tmp$12.next();
         element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
-        root.v.appendChild(element_5.element);
       }
     },
     isSage: function (thread) {
