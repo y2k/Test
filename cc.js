@@ -56,21 +56,21 @@
       }
     }),
     main_kand9s$: function (args) {
-      var tmp$0;
+      var tmp$0, tmp$1, tmp$2;
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
       var destination = new Kotlin.ArrayList();
-      var tmp$1;
-      tmp$1 = $receiver.iterator();
-      while (tmp$1.hasNext()) {
-        var element = tmp$1.next();
+      var tmp$3;
+      tmp$3 = $receiver.iterator();
+      while (tmp$3.hasNext()) {
+        var element = tmp$3.next();
         var main_kand9s$f$result;
         main_kand9s$f$break: {
-          var tmp$4, tmp$3;
-          var text = (tmp$3 = (tmp$4 = element.getElementsByClassName('post-message')[0]) != null ? tmp$4.textContent : null) != null ? tmp$3 : '';
-          var tmp$2;
-          tmp$2 = _.StopWords.items.iterator();
-          while (tmp$2.hasNext()) {
-            var element_0 = tmp$2.next();
+          var tmp$6, tmp$5;
+          var text = (tmp$5 = (tmp$6 = element.getElementsByClassName('post-message')[0]) != null ? tmp$6.textContent : null) != null ? tmp$5 : '';
+          var tmp$4;
+          tmp$4 = _.StopWords.items.iterator();
+          while (tmp$4.hasNext()) {
+            var element_0 = tmp$4.next();
             if (element_0.containsMatchIn_6bul2c$(text)) {
               main_kand9s$f$result = true;
               break main_kand9s$f$break;
@@ -82,62 +82,63 @@
           destination.add_za3rmp$(element);
         }
       }
-      var tmp$5;
-      tmp$5 = destination.iterator();
-      while (tmp$5.hasNext()) {
-        var element_1 = tmp$5.next();
-        var tmp$6;
+      var tmp$7;
+      tmp$7 = destination.iterator();
+      while (tmp$7.hasNext()) {
+        var element_1 = tmp$7.next();
+        var tmp$8;
         var clickEvent = document.createEvent('MouseEvents');
         clickEvent.initEvent('click', true, true);
-        (tmp$6 = element_1.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$6.dispatchEvent(clickEvent) : null;
+        (tmp$8 = element_1.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$8.dispatchEvent(clickEvent) : null;
       }
       var $receiver_0 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
       var destination_0 = new Kotlin.ArrayList();
-      var tmp$7;
-      tmp$7 = $receiver_0.iterator();
-      while (tmp$7.hasNext()) {
-        var element_2 = tmp$7.next();
+      var tmp$9;
+      tmp$9 = $receiver_0.iterator();
+      while (tmp$9.hasNext()) {
+        var element_2 = tmp$9.next();
         if (Kotlin.modules['stdlib'].kotlin.text.startsWith_41xvrb$(element_2.id, 'post-') && _.isSage(element_2)) {
           destination_0.add_za3rmp$(element_2);
         }
       }
       var destination_1 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$(destination_0, 10));
-      var tmp$8;
-      tmp$8 = destination_0.iterator();
-      while (tmp$8.hasNext()) {
-        var item = tmp$8.next();
+      var tmp$10;
+      tmp$10 = destination_0.iterator();
+      while (tmp$10.hasNext()) {
+        var item = tmp$10.next();
         destination_1.add_za3rmp$(Kotlin.modules['stdlib'].kotlin.text.replace_dn5w6f$(item.id, 'post-', ''));
       }
-      var tmp$9;
-      tmp$9 = destination_1.iterator();
-      while (tmp$9.hasNext()) {
-        var element_3 = tmp$9.next();
+      var tmp$11;
+      tmp$11 = destination_1.iterator();
+      while (tmp$11.hasNext()) {
+        var element_3 = tmp$11.next();
         Post(element_3).hide(true);
       }
       var $receiver_1 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('spoiler'));
-      var tmp$10;
-      tmp$10 = $receiver_1.iterator();
-      while (tmp$10.hasNext()) {
-        var element_4 = tmp$10.next();
+      var tmp$12;
+      tmp$12 = $receiver_1.iterator();
+      while (tmp$12.hasNext()) {
+        var element_4 = tmp$12.next();
         element_4.style.color = '#a0a0a0';
       }
       var $receiver_2 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
       var destination_2 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$($receiver_2, 10));
-      var tmp$11;
-      tmp$11 = $receiver_2.iterator();
-      while (tmp$11.hasNext()) {
-        var item_0 = tmp$11.next();
+      var tmp$13;
+      tmp$13 = $receiver_2.iterator();
+      while (tmp$13.hasNext()) {
+        var item_0 = tmp$13.next();
         destination_2.add_za3rmp$(new _.Message(item_0));
       }
       var messages = destination_2;
-      var root = {v: (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE()};
+      var root = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
+      var messageList = (tmp$2 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
       var $receiver_3 = (new _.HierarchySorter(messages)).sort();
-      var tmp$12;
-      tmp$12 = $receiver_3.iterator();
-      while (tmp$12.hasNext()) {
-        var element_5 = tmp$12.next();
-        element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
-        root.v.appendChild(element_5.element);
+      var tmp$14;
+      tmp$14 = $receiver_3.iterator();
+      while (tmp$14.hasNext()) {
+        var element_5 = tmp$14.next();
+        element_5.element.style.marginLeft = (20 * element_5.computeLevel_j3xzrm$(root, messages)).toString() + 'px';
+        messageList.appendChild(element_5.element);
       }
     },
     isSage: function (thread) {
@@ -185,10 +186,12 @@
       }
       this.parent = (tmp$0 = Kotlin.modules['stdlib'].kotlin.collections.firstOrNull_fvq2g0$(destination_1)) != null ? tmp$0 : 0;
     }, /** @lends _.Message.prototype */ {
-      computeLevel_don60$: function (messages) {
+      computeLevel_j3xzrm$: function (root, messages) {
         var tmp$0, tmp$1;
         if (this.parent === 0)
           return 0;
+        if (this.parent === root)
+          return 1;
         var curId = {v: this.parent};
         var level = 0;
         do {
