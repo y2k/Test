@@ -5,6 +5,7 @@ import org.w3c.dom.HTMLElement
 import kotlin.browser.document
 import kotlin.browser.window
 import kotlin.dom.asList
+import kotlin.dom.removeFromParent
 
 fun main(args: Array<String>) {
     if (document.readyState == "complete") filter()
@@ -36,8 +37,16 @@ private fun filter() {
 
     document
         .getElementsByClassName("post-wrapper").asList()
+        .map { Message(it) }
         .forEach {
-            it.style.marginLeft = "20px"
+            //            it.removeFromParent()
+            //            it.parentElement?.appendChild(it)
+
+            if (it.parent != null) {
+
+                it.element.style.marginLeft = "20px"
+
+            }
         }
 }
 
@@ -45,4 +54,19 @@ private fun isSage(thread: HTMLElement): Boolean {
     return thread
         .getElementsByClassName("post-email").asList()
         .any { "mailto:sage".equals(it.attributes["href"]?.value, true) }
+}
+
+class Message(val element: HTMLElement) {
+
+    val id: String
+    val parent: String?
+
+    init {
+        id = element.id.replace("post-", "")
+        parent = element
+            .getElementsByClassName("post-message").asList()
+            .flatMap { it.getElementsByClassName("post-reply-link").asList() }
+            .map { it.attributes["data-num"]?.value }
+            .firstOrNull()
+    }
 }

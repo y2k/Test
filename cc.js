@@ -88,11 +88,20 @@
         element_4.style.color = '#a0a0a0';
       }
       var $receiver_2 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
+      var destination_2 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$($receiver_2, 10));
       var tmp$10;
       tmp$10 = $receiver_2.iterator();
       while (tmp$10.hasNext()) {
-        var element_5 = tmp$10.next();
-        element_5.style.marginLeft = '20px';
+        var item_0 = tmp$10.next();
+        destination_2.add_za3rmp$(new _.Message(item_0));
+      }
+      var tmp$11;
+      tmp$11 = destination_2.iterator();
+      while (tmp$11.hasNext()) {
+        var element_5 = tmp$11.next();
+        if (element_5.parent != null) {
+          element_5.element.style.marginLeft = '20px';
+        }
       }
     },
     isSage: function (thread) {
@@ -107,7 +116,30 @@
         }
       }
       return false;
-    }
+    },
+    Message: Kotlin.createClass(null, function (element) {
+      this.element = element;
+      this.id = Kotlin.modules['stdlib'].kotlin.text.replace_dn5w6f$(this.element.id, 'post-', '');
+      var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(this.element.getElementsByClassName('post-message'));
+      var destination = new Kotlin.ArrayList();
+      var tmp$0;
+      tmp$0 = $receiver.iterator();
+      while (tmp$0.hasNext()) {
+        var element_0 = tmp$0.next();
+        var list = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(element_0.getElementsByClassName('post-reply-link'));
+        Kotlin.modules['stdlib'].kotlin.collections.addAll_p6ac9a$(destination, list);
+      }
+      var destination_0 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$(destination, 10));
+      var tmp$1;
+      tmp$1 = destination.iterator();
+      while (tmp$1.hasNext()) {
+        var item = tmp$1.next();
+        var tmp$2;
+        destination_0.add_za3rmp$((tmp$2 = item.attributes['data-num']) != null ? tmp$2.value : null);
+      }
+      this.parent = Kotlin.modules['stdlib'].kotlin.collections.firstOrNull_fvq2g0$(destination_0);
+    }, null, /** @lends _.Message */ {
+    })
   });
   Kotlin.defineModule('ChanCleaner', _);
   _.main_kand9s$([]);
