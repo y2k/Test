@@ -13,6 +13,48 @@
       this.items = destination;
     });
   }, /** @lends _ */ {
+    HierarchySorter: Kotlin.createClass(null, function (items) {
+      this.source_tms2uv$ = Kotlin.modules['stdlib'].java.util.ArrayList_4fm7v2$(items);
+      this.result_u9cuph$ = new Kotlin.ArrayList();
+    }, /** @lends _.HierarchySorter.prototype */ {
+      sort: function () {
+        this.extract(0);
+        return this.result_u9cuph$;
+      },
+      extract: function (id) {
+        var $receiver = this.source_tms2uv$;
+        var destination = new Kotlin.ArrayList();
+        var tmp$0;
+        tmp$0 = $receiver.iterator();
+        while (tmp$0.hasNext()) {
+          var element = tmp$0.next();
+          if (element.parent === id) {
+            destination.add_za3rmp$(element);
+          }
+        }
+        var childs = destination;
+        Kotlin.modules['stdlib'].kotlin.collections.removeAll_v06vm4$(this.source_tms2uv$, _.HierarchySorter.extract$f_0(id));
+        var action = _.HierarchySorter.extract$f_1(this);
+        var tmp$1;
+        tmp$1 = childs.iterator();
+        while (tmp$1.hasNext()) {
+          var element_0 = tmp$1.next();
+          action(element_0);
+        }
+      }
+    }, /** @lends _.HierarchySorter */ {
+      extract$f_0: function (id) {
+        return function (it) {
+          return it.parent === id;
+        };
+      },
+      extract$f_1: function (this$HierarchySorter) {
+        return function (it) {
+          this$HierarchySorter.result_u9cuph$.add_za3rmp$(it);
+          this$HierarchySorter.extract(it.id);
+        };
+      }
+    }),
     main_kand9s$: function (args) {
       var tmp$0;
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
@@ -89,19 +131,13 @@
       }
       var messages = destination_2;
       var root = {v: (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE()};
+      var $receiver_3 = (new _.HierarchySorter(messages)).sort();
       var tmp$12;
-      tmp$12 = messages.iterator();
+      tmp$12 = $receiver_3.iterator();
       while (tmp$12.hasNext()) {
         var element_5 = tmp$12.next();
-        Kotlin.modules['stdlib'].kotlin.dom.removeFromParent_asww5t$(element_5.element);
-      }
-      var $receiver_3 = Kotlin.modules['stdlib'].kotlin.collections.sorted_77rvyy$(messages);
-      var tmp$13;
-      tmp$13 = $receiver_3.iterator();
-      while (tmp$13.hasNext()) {
-        var element_6 = tmp$13.next();
-        element_6.element.style.marginLeft = (20 * element_6.computeLevel_don60$(messages)).toString() + 'px';
-        root.v.appendChild(element_6.element);
+        element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
+        root.v.appendChild(element_5.element);
       }
     },
     isSage: function (thread) {
