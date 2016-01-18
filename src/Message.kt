@@ -32,6 +32,6 @@ class Message(val element: HTMLElement) : Comparable<Message> {
     }
 
     override fun compareTo(other: Message): Int {
-        return if (parent != other.parent) other.parent - parent else other.id - id
+        return if (parent != other.parent) parent - other.parent else id - other.id
     }
 }

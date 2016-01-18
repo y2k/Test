@@ -35,8 +35,9 @@ fun main(args: Array<String>) {
         .map { Message(it) }
 
     var root = messages[0].element.parentNode!!
-    messages
-        .sorted()
+    //    messages.forEach { it.element.removeFromParent() }
+    HierarchySorter(messages)
+        .sort()
         .forEach {
             it.element.style.marginLeft = "${20 * it.computeLevel(messages)}px"
             root.appendChild(it.element)
