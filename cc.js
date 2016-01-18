@@ -13,11 +13,13 @@
       this.items = destination;
     });
   }, /** @lends _ */ {
-    HierarchySorter: Kotlin.createClass(null, function (items) {
+    HierarchySorter: Kotlin.createClass(null, function (items, root) {
+      this.root_j6pas0$ = root;
       this.source_tms2uv$ = Kotlin.modules['stdlib'].java.util.ArrayList_4fm7v2$(items);
       this.result_u9cuph$ = new Kotlin.ArrayList();
     }, /** @lends _.HierarchySorter.prototype */ {
       sort: function () {
+        this.extract(this.root_j6pas0$);
         this.extract(0);
         return this.result_u9cuph$;
       },
@@ -138,7 +140,7 @@
         var element_5 = tmp$14.next();
         Kotlin.modules['stdlib'].kotlin.dom.removeFromParent_asww5t$(element_5.element);
       }
-      var $receiver_3 = (new _.HierarchySorter(messages)).sort();
+      var $receiver_3 = (new _.HierarchySorter(messages, root)).sort();
       var tmp$15;
       tmp$15 = $receiver_3.iterator();
       while (tmp$15.hasNext()) {
