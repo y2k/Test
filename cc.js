@@ -138,7 +138,8 @@
       tmp$14 = $receiver_3.iterator();
       while (tmp$14.hasNext()) {
         var element_5 = tmp$14.next();
-        window.alert('PARENT = |' + root + '|');
+        if (element_5.parent !== 0)
+          window.alert('PARENT = |' + element_5.parent + '|' + element_5.element + '|');
         element_5.element.style.marginLeft = (20 * element_5.computeLevel_j3xzrm$(root, messages)).toString() + 'px';
         messageList.appendChild(element_5.element);
       }
