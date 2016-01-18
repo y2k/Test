@@ -13,16 +13,7 @@
       this.items = destination;
     });
   }, /** @lends _ */ {
-    main_kand9s$f: function (it) {
-      _.filter();
-    },
     main_kand9s$: function (args) {
-      if (Kotlin.equals(document.readyState, 'complete'))
-        _.filter();
-      else
-        window.onload = _.main_kand9s$f;
-    },
-    filter: function () {
       var tmp$0;
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
       var destination = new Kotlin.ArrayList();
@@ -30,8 +21,8 @@
       tmp$1 = $receiver.iterator();
       while (tmp$1.hasNext()) {
         var element = tmp$1.next();
-        var filter$f$result;
-        filter$f$break: {
+        var main_kand9s$f$result;
+        main_kand9s$f$break: {
           var tmp$4, tmp$3;
           var text = (tmp$3 = (tmp$4 = element.getElementsByClassName('post-message')[0]) != null ? tmp$4.textContent : null) != null ? tmp$3 : '';
           var tmp$2;
@@ -39,13 +30,13 @@
           while (tmp$2.hasNext()) {
             var element_0 = tmp$2.next();
             if (element_0.containsMatchIn_6bul2c$(text)) {
-              filter$f$result = true;
-              break filter$f$break;
+              main_kand9s$f$result = true;
+              break main_kand9s$f$break;
             }
           }
-          filter$f$result = false;
+          main_kand9s$f$result = false;
         }
-        if (filter$f$result) {
+        if (main_kand9s$f$result) {
           destination.add_za3rmp$(element);
         }
       }

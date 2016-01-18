@@ -8,11 +8,6 @@ import kotlin.dom.asList
 import kotlin.dom.removeFromParent
 
 fun main(args: Array<String>) {
-    if (document.readyState == "complete") filter()
-    else window.onload = { filter() }
-}
-
-private fun filter() {
     document
         .getElementsByClassName("thread").asList()
         .filter {
