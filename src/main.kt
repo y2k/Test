@@ -35,18 +35,15 @@ private fun filter() {
         .getElementsByClassName("spoiler").asList()
         .forEach { it.style.color = "#a0a0a0" }
 
-    document
+    val messages = document
         .getElementsByClassName("post-wrapper").asList()
         .map { Message(it) }
+    messages
         .forEach {
             //            it.removeFromParent()
             //            it.parentElement?.appendChild(it)
 
-            if (it.parent != null) {
-
-                it.element.style.marginLeft = "20px"
-
-            }
+            it.element.style.marginLeft = "${20 * it.computeLevel(messages)}px"
         }
 }
 
@@ -68,5 +65,17 @@ class Message(val element: HTMLElement) {
             .flatMap { it.getElementsByClassName("post-reply-link").asList() }
             .map { it.attributes["data-num"]?.value }
             .firstOrNull()
+    }
+
+    fun computeLevel(messages: List<Message>): Int {
+        if (parent == null) return 0
+
+        var curId: String? = parent
+        var level = 0
+        do {
+            level++
+            curId = messages.firstOrNull { it.id == curId }?.parent
+        } while (curId != null)
+        return level
     }
 }

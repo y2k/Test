@@ -95,13 +95,12 @@
         var item_0 = tmp$10.next();
         destination_2.add_za3rmp$(new _.Message(item_0));
       }
+      var messages = destination_2;
       var tmp$11;
-      tmp$11 = destination_2.iterator();
+      tmp$11 = messages.iterator();
       while (tmp$11.hasNext()) {
         var element_5 = tmp$11.next();
-        if (element_5.parent != null) {
-          element_5.element.style.marginLeft = '20px';
-        }
+        element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
       }
     },
     isSage: function (thread) {
@@ -138,7 +137,34 @@
         destination_0.add_za3rmp$((tmp$2 = item.attributes['data-num']) != null ? tmp$2.value : null);
       }
       this.parent = Kotlin.modules['stdlib'].kotlin.collections.firstOrNull_fvq2g0$(destination_0);
-    }, null, /** @lends _.Message */ {
+    }, /** @lends _.Message.prototype */ {
+      computeLevel_don60$: function (messages) {
+        var tmp$0;
+        if (this.parent == null)
+          return 0;
+        var curId = {v: this.parent};
+        var level = 0;
+        do {
+          level++;
+          var firstOrNull_azvtw4$result;
+          firstOrNull_azvtw4$break: {
+            var tmp$1;
+            tmp$1 = messages.iterator();
+            while (tmp$1.hasNext()) {
+              var element = tmp$1.next();
+              if (Kotlin.equals(element.id, curId.v)) {
+                firstOrNull_azvtw4$result = element;
+                break firstOrNull_azvtw4$break;
+              }
+            }
+            firstOrNull_azvtw4$result = null;
+          }
+          curId.v = (tmp$0 = firstOrNull_azvtw4$result) != null ? tmp$0.parent : null;
+        }
+         while (curId.v != null);
+        return level;
+      }
+    }, /** @lends _.Message */ {
     })
   });
   Kotlin.defineModule('ChanCleaner', _);
