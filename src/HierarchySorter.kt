@@ -3,13 +3,15 @@ import java.util.*
 /**
  * Created by y2k on 1/18/16.
  */
-class HierarchySorter(items: List<Message>) {
+class HierarchySorter(items: List<Message>, private val root: Int) {
 
     private val source = ArrayList(items)
     private val result = ArrayList<Message>()
 
     fun sort(): List<Message> {
+        extract(root)
         extract(0)
+        result.addAll(source)
         return result
     }
 

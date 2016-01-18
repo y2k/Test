@@ -4,7 +4,7 @@ import kotlin.dom.asList
 /**
  * Created by y2k on 1/18/16.
  */
-class Message(val element: HTMLElement) : Comparable<Message> {
+class Message(val element: HTMLElement) {
 
     val id: Int
     val parent: Int
@@ -19,8 +19,9 @@ class Message(val element: HTMLElement) : Comparable<Message> {
             .firstOrNull() ?: 0
     }
 
-    fun computeLevel(messages: List<Message>): Int {
+    fun computeLevel(root: Int, messages: List<Message>): Int {
         if (parent == 0) return 0
+        if (parent == root) return 1
 
         var curId = parent
         var level = 0
@@ -29,9 +30,5 @@ class Message(val element: HTMLElement) : Comparable<Message> {
             curId = messages.firstOrNull { it.id == curId }?.parent ?: 0
         } while (curId != 0)
         return level
-    }
-
-    override fun compareTo(other: Message): Int {
-        return if (parent != other.parent) parent - other.parent else id - other.id
     }
 }

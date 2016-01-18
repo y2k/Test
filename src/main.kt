@@ -34,13 +34,20 @@ fun main(args: Array<String>) {
         .getElementsByClassName("post-wrapper").asList()
         .map { Message(it) }
 
-    var root = messages[0].element.parentNode!!
-    //    messages.forEach { it.element.removeFromParent() }
-    HierarchySorter(messages)
+    val root = parseInt(document.getElementById("qr-thread")!!.attributes["value"]!!.value)
+    val messageList = messages[0].element.parentNode!!
+
+//    messages.forEach { it.element.removeFromParent() } // FIXME:
+
+    HierarchySorter(messages, root)
         .sort()
         .forEach {
-            it.element.style.marginLeft = "${20 * it.computeLevel(messages)}px"
-            root.appendChild(it.element)
+            //            if (it.parent != 0)
+            //                window.alert("PARENT = |${it.parent}|${it.element}|")
+            it.element.style.marginLeft = "${20 * it.computeLevel(root, messages)}px"
+            messageList.appendChild(it.element)
+
+            //            it.element.innerHTML += "<h1>${it.parent}</h1>"
         }
 }
 
