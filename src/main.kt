@@ -33,6 +33,12 @@ private fun filter() {
     document
         .getElementsByClassName("spoiler").asList()
         .forEach { it.style.color = "#a0a0a0" }
+
+    document
+        .getElementsByClassName("post-wrapper").asList()
+        .forEach {
+            it.style.marginLeft = "20px"
+        }
 }
 
 private fun isSage(thread: HTMLElement): Boolean {

@@ -87,6 +87,13 @@
         var element_4 = tmp$9.next();
         element_4.style.color = '#a0a0a0';
       }
+      var $receiver_2 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
+      var tmp$10;
+      tmp$10 = $receiver_2.iterator();
+      while (tmp$10.hasNext()) {
+        var element_5 = tmp$10.next();
+        element_5.style.marginLeft = '20px';
+      }
     },
     isSage: function (thread) {
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(thread.getElementsByClassName('post-email'));
