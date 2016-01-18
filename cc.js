@@ -89,19 +89,13 @@
       }
       var messages = destination_2;
       var root = {v: (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE()};
+      var $receiver_3 = Kotlin.modules['stdlib'].kotlin.collections.sorted_77rvyy$(messages);
       var tmp$12;
-      tmp$12 = messages.iterator();
+      tmp$12 = $receiver_3.iterator();
       while (tmp$12.hasNext()) {
         var element_5 = tmp$12.next();
-        Kotlin.modules['stdlib'].kotlin.dom.removeFromParent_asww5t$(element_5.element);
-      }
-      var $receiver_3 = Kotlin.modules['stdlib'].kotlin.collections.sorted_77rvyy$(messages);
-      var tmp$13;
-      tmp$13 = $receiver_3.iterator();
-      while (tmp$13.hasNext()) {
-        var element_6 = tmp$13.next();
-        element_6.element.style.marginLeft = (20 * element_6.computeLevel_don60$(messages)).toString() + 'px';
-        root.v.appendChild(element_6.element);
+        element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
+        root.v.appendChild(element_5.element);
       }
     },
     isSage: function (thread) {

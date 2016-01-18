@@ -35,7 +35,6 @@ fun main(args: Array<String>) {
         .map { Message(it) }
 
     var root = messages[0].element.parentNode!!
-    messages.forEach { it.element.removeFromParent() }
     messages
         .sorted()
         .forEach {
