@@ -131,6 +131,7 @@
       }
       var messages = destination_2;
       var root = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
+      window.alert('ID = |' + root + '|');
       var messageList = (tmp$2 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
       var $receiver_3 = (new _.HierarchySorter(messages)).sort();
       var tmp$14;
@@ -154,9 +155,7 @@
       }
       return false;
     },
-    Message: Kotlin.createClass(function () {
-      return [Kotlin.Comparable];
-    }, function (element) {
+    Message: Kotlin.createClass(null, function (element) {
       var tmp$0;
       this.element = element;
       this.id = parseInt(Kotlin.modules['stdlib'].kotlin.text.replace_dn5w6f$(this.element.id, 'post-', ''));
@@ -213,9 +212,6 @@
         }
          while (curId.v !== 0);
         return level;
-      },
-      compareTo_za3rmp$: function (other) {
-        return this.parent !== other.parent ? this.parent - other.parent : this.id - other.id;
       }
     }, /** @lends _.Message */ {
       f: function (it) {
