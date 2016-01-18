@@ -38,12 +38,14 @@ private fun filter() {
     val messages = document
         .getElementsByClassName("post-wrapper").asList()
         .map { Message(it) }
-    messages
-        .forEach {
-            //            it.removeFromParent()
-            //            it.parentElement?.appendChild(it)
 
+    var root = messages[0].element.parentNode!!
+    messages.forEach { it.element.removeFromParent() }
+    messages
+        .sorted()
+        .forEach {
             it.element.style.marginLeft = "${20 * it.computeLevel(messages)}px"
+            root.appendChild(it.element)
         }
 }
 
