@@ -132,14 +132,19 @@
       var messages = destination_2;
       var root = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
       var messageList = (tmp$2 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
-      var $receiver_3 = (new _.HierarchySorter(messages)).sort();
       var tmp$14;
-      tmp$14 = $receiver_3.iterator();
+      tmp$14 = messages.iterator();
       while (tmp$14.hasNext()) {
         var element_5 = tmp$14.next();
-        element_5.element.style.marginLeft = (20 * element_5.computeLevel_j3xzrm$(root, messages)).toString() + 'px';
-        messageList.appendChild(element_5.element);
-        element_5.element.innerHTML = element_5.element.innerHTML + ('<h1>' + element_5.parent + '<\/h1>');
+        Kotlin.modules['stdlib'].kotlin.dom.removeFromParent_asww5t$(element_5.element);
+      }
+      var $receiver_3 = (new _.HierarchySorter(messages)).sort();
+      var tmp$15;
+      tmp$15 = $receiver_3.iterator();
+      while (tmp$15.hasNext()) {
+        var element_6 = tmp$15.next();
+        element_6.element.style.marginLeft = (20 * element_6.computeLevel_j3xzrm$(root, messages)).toString() + 'px';
+        messageList.appendChild(element_6.element);
       }
     },
     isSage: function (thread) {
