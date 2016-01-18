@@ -52,30 +52,3 @@ private fun isSage(thread: HTMLElement): Boolean {
         .getElementsByClassName("post-email").asList()
         .any { "mailto:sage".equals(it.attributes["href"]?.value, true) }
 }
-
-class Message(val element: HTMLElement) {
-
-    val id: String
-    val parent: String?
-
-    init {
-        id = element.id.replace("post-", "")
-        parent = element
-            .getElementsByClassName("post-message").asList()
-            .flatMap { it.getElementsByClassName("post-reply-link").asList() }
-            .map { it.attributes["data-num"]?.value }
-            .firstOrNull()
-    }
-
-    fun computeLevel(messages: List<Message>): Int {
-        if (parent == null) return 0
-
-        var curId: String? = parent
-        var level = 0
-        do {
-            level++
-            curId = messages.firstOrNull { it.id == curId }?.parent
-        } while (curId != null)
-        return level
-    }
-}
