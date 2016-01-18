@@ -27,7 +27,7 @@ class Message(val element: HTMLElement) : Comparable<Message> {
         do {
             level++
             curId = messages.firstOrNull { it.id == curId }?.parent ?: 0
-        } while (curId != null)
+        } while (curId != 0)
         return level
     }
 
