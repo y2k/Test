@@ -14,17 +14,16 @@
     });
   }, /** @lends _ */ {
     main_kand9s$: function (args) {
-      var tmp$0;
       var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
       var destination = new Kotlin.ArrayList();
-      var tmp$1;
-      tmp$1 = $receiver.iterator();
-      while (tmp$1.hasNext()) {
-        var element = tmp$1.next();
+      var tmp$0;
+      tmp$0 = $receiver.iterator();
+      while (tmp$0.hasNext()) {
+        var element = tmp$0.next();
         var main_kand9s$f$result;
         main_kand9s$f$break: {
-          var tmp$4, tmp$3;
-          var text = (tmp$3 = (tmp$4 = element.getElementsByClassName('post-message')[0]) != null ? tmp$4.textContent : null) != null ? tmp$3 : '';
+          var tmp$3, tmp$1;
+          var text = (tmp$1 = (tmp$3 = element.getElementsByClassName('post-message')[0]) != null ? tmp$3.textContent : null) != null ? tmp$1 : '';
           var tmp$2;
           tmp$2 = _.StopWords.items.iterator();
           while (tmp$2.hasNext()) {
@@ -40,60 +39,58 @@
           destination.add_za3rmp$(element);
         }
       }
-      var tmp$5;
-      tmp$5 = destination.iterator();
-      while (tmp$5.hasNext()) {
-        var element_1 = tmp$5.next();
-        var tmp$6;
+      var tmp$4;
+      tmp$4 = destination.iterator();
+      while (tmp$4.hasNext()) {
+        var element_1 = tmp$4.next();
+        var tmp$5;
         var clickEvent = document.createEvent('MouseEvents');
         clickEvent.initEvent('click', true, true);
-        (tmp$6 = element_1.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$6.dispatchEvent(clickEvent) : null;
+        (tmp$5 = element_1.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$5.dispatchEvent(clickEvent) : null;
       }
       var $receiver_0 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
       var destination_0 = new Kotlin.ArrayList();
-      var tmp$7;
-      tmp$7 = $receiver_0.iterator();
-      while (tmp$7.hasNext()) {
-        var element_2 = tmp$7.next();
+      var tmp$6;
+      tmp$6 = $receiver_0.iterator();
+      while (tmp$6.hasNext()) {
+        var element_2 = tmp$6.next();
         if (Kotlin.modules['stdlib'].kotlin.text.startsWith_41xvrb$(element_2.id, 'post-') && _.isSage(element_2)) {
           destination_0.add_za3rmp$(element_2);
         }
       }
       var destination_1 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$(destination_0, 10));
-      var tmp$8;
-      tmp$8 = destination_0.iterator();
-      while (tmp$8.hasNext()) {
-        var item = tmp$8.next();
+      var tmp$7;
+      tmp$7 = destination_0.iterator();
+      while (tmp$7.hasNext()) {
+        var item = tmp$7.next();
         destination_1.add_za3rmp$(Kotlin.modules['stdlib'].kotlin.text.replace_dn5w6f$(item.id, 'post-', ''));
       }
-      var tmp$9;
-      tmp$9 = destination_1.iterator();
-      while (tmp$9.hasNext()) {
-        var element_3 = tmp$9.next();
+      var tmp$8;
+      tmp$8 = destination_1.iterator();
+      while (tmp$8.hasNext()) {
+        var element_3 = tmp$8.next();
         Post(element_3).hide(true);
       }
       var $receiver_1 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('spoiler'));
-      var tmp$10;
-      tmp$10 = $receiver_1.iterator();
-      while (tmp$10.hasNext()) {
-        var element_4 = tmp$10.next();
+      var tmp$9;
+      tmp$9 = $receiver_1.iterator();
+      while (tmp$9.hasNext()) {
+        var element_4 = tmp$9.next();
         element_4.style.color = '#a0a0a0';
       }
       var $receiver_2 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
       var destination_2 = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$($receiver_2, 10));
-      var tmp$11;
-      tmp$11 = $receiver_2.iterator();
-      while (tmp$11.hasNext()) {
-        var item_0 = tmp$11.next();
+      var tmp$10;
+      tmp$10 = $receiver_2.iterator();
+      while (tmp$10.hasNext()) {
+        var item_0 = tmp$10.next();
         destination_2.add_za3rmp$(new _.Message(item_0));
       }
       var messages = destination_2;
-      var root = (tmp$0 = messages.get_za3lpa$(0).element.parentNode) != null ? tmp$0 : Kotlin.throwNPE();
-      var $receiver_3 = Kotlin.modules['stdlib'].kotlin.collections.sorted_77rvyy$(messages);
-      var tmp$12;
-      tmp$12 = $receiver_3.iterator();
-      while (tmp$12.hasNext()) {
-        var element_5 = tmp$12.next();
+      var tmp$11;
+      tmp$11 = messages.iterator();
+      while (tmp$11.hasNext()) {
+        var element_5 = tmp$11.next();
         element_5.element.style.marginLeft = (20 * element_5.computeLevel_don60$(messages)).toString() + 'px';
       }
     },
