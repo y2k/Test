@@ -170,7 +170,7 @@
         return level;
       },
       compareTo_za3rmp$: function (other) {
-        return this.parent !== other.parent ? other.parent - this.parent : other.id - this.id;
+        return this.parent !== other.parent ? this.parent - other.parent : this.id - other.id;
       }
     }, /** @lends _.Message */ {
       f: function (it) {
