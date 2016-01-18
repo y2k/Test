@@ -21,6 +21,7 @@
       sort: function () {
         this.extract(this.root_j6pas0$);
         this.extract(0);
+        this.result_u9cuph$.addAll_4fm7v2$(this.source_tms2uv$);
         return this.result_u9cuph$;
       },
       extract: function (id) {
