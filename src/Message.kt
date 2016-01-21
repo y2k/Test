@@ -9,6 +9,13 @@ class Message(val element: HTMLElement) {
     val id: Int
     val parent: Int
 
+    val isSage: Boolean
+        get () {
+            return element
+                .getElementsByClassName("post-email").asList()
+                .any { "mailto:sage".equals(it.attributes["href"]?.value, true) }
+        }
+
     init {
         id = parseInt(element.id.replace("post-", ""))
         parent = element
