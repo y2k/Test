@@ -77,38 +77,38 @@
     }),
     main_kand9s$: function (args) {
       var tmp$0, tmp$1, tmp$2;
-      var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
-      var destination = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$($receiver, 10));
+      var $receiver = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('spoiler'));
       var tmp$3;
       tmp$3 = $receiver.iterator();
       while (tmp$3.hasNext()) {
-        var item = tmp$3.next();
-        destination.add_za3rmp$(new _.Message(item));
-      }
-      var posts = destination;
-      var destination_0 = new Kotlin.ArrayList();
-      var tmp$4;
-      tmp$4 = posts.iterator();
-      while (tmp$4.hasNext()) {
-        var element = tmp$4.next();
-        if (element.isSage) {
-          destination_0.add_za3rmp$(element);
-        }
-      }
-      var tmp$5;
-      tmp$5 = destination_0.iterator();
-      while (tmp$5.hasNext()) {
-        var element_0 = tmp$5.next();
-        Post(element_0.id).hide(true);
-      }
-      var $receiver_0 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('spoiler'));
-      var tmp$6;
-      tmp$6 = $receiver_0.iterator();
-      while (tmp$6.hasNext()) {
-        var element_1 = tmp$6.next();
-        element_1.style.color = '#a0a0a0';
+        var element = tmp$3.next();
+        element.style.color = '#a0a0a0';
       }
       if (_.isThread_4wc2mi$(document)) {
+        var $receiver_0 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('post-wrapper'));
+        var destination = new Kotlin.ArrayList(Kotlin.modules['stdlib'].kotlin.collections.collectionSizeOrDefault_pjxt3m$($receiver_0, 10));
+        var tmp$4;
+        tmp$4 = $receiver_0.iterator();
+        while (tmp$4.hasNext()) {
+          var item = tmp$4.next();
+          destination.add_za3rmp$(new _.Message(item));
+        }
+        var posts = destination;
+        var destination_0 = new Kotlin.ArrayList();
+        var tmp$5;
+        tmp$5 = posts.iterator();
+        while (tmp$5.hasNext()) {
+          var element_0 = tmp$5.next();
+          if (element_0.isSage) {
+            destination_0.add_za3rmp$(element_0);
+          }
+        }
+        var tmp$6;
+        tmp$6 = destination_0.iterator();
+        while (tmp$6.hasNext()) {
+          var element_1 = tmp$6.next();
+          Post(element_1.id).hide(true);
+        }
         var rootMessage = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
         var messageParentNode = (tmp$2 = posts.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
         var $receiver_1 = (new _.HierarchySorter(posts, rootMessage)).sort();
