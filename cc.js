@@ -109,51 +109,51 @@
         element_1.style.color = '#a0a0a0';
       }
       if (_.isThread_4wc2mi$(document)) {
-        var $receiver_1 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
-        var destination_1 = new Kotlin.ArrayList();
+        var rootMessage = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
+        var messageParentNode = (tmp$2 = posts.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
+        var $receiver_1 = (new _.HierarchySorter(posts, rootMessage)).sort();
         var tmp$7;
         tmp$7 = $receiver_1.iterator();
         while (tmp$7.hasNext()) {
           var element_2 = tmp$7.next();
-          var main_kand9s$f_3$result;
-          main_kand9s$f_3$break: {
-            var tmp$10, tmp$9;
-            var text = (tmp$9 = (tmp$10 = element_2.getElementsByClassName('post-message')[0]) != null ? tmp$10.textContent : null) != null ? tmp$9 : '';
-            var tmp$8;
-            tmp$8 = _.StopWords.items.iterator();
-            while (tmp$8.hasNext()) {
-              var element_3 = tmp$8.next();
-              if (element_3.containsMatchIn_6bul2c$(text)) {
-                main_kand9s$f_3$result = true;
-                break main_kand9s$f_3$break;
-              }
-            }
-            main_kand9s$f_3$result = false;
-          }
-          if (main_kand9s$f_3$result) {
-            destination_1.add_za3rmp$(element_2);
-          }
-        }
-        var tmp$11;
-        tmp$11 = destination_1.iterator();
-        while (tmp$11.hasNext()) {
-          var element_4 = tmp$11.next();
-          var tmp$12;
-          var clickEvent = document.createEvent('MouseEvents');
-          clickEvent.initEvent('click', true, true);
-          (tmp$12 = element_4.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$12.dispatchEvent(clickEvent) : null;
+          element_2.element.style.marginLeft = (20 * element_2.computeLevel_j3xzrm$(rootMessage, posts)).toString() + 'px';
+          messageParentNode.appendChild(element_2.element);
         }
       }
        else {
-        var rootMessage = parseInt(((tmp$1 = ((tmp$0 = document.getElementById('qr-thread')) != null ? tmp$0 : Kotlin.throwNPE()).attributes['value']) != null ? tmp$1 : Kotlin.throwNPE()).value);
-        var messageParentNode = (tmp$2 = posts.get_za3lpa$(0).element.parentNode) != null ? tmp$2 : Kotlin.throwNPE();
-        var $receiver_2 = (new _.HierarchySorter(posts, rootMessage)).sort();
-        var tmp$13;
-        tmp$13 = $receiver_2.iterator();
-        while (tmp$13.hasNext()) {
-          var element_5 = tmp$13.next();
-          element_5.element.style.marginLeft = (20 * element_5.computeLevel_j3xzrm$(rootMessage, posts)).toString() + 'px';
-          messageParentNode.appendChild(element_5.element);
+        var $receiver_2 = Kotlin.modules['stdlib'].kotlin.dom.asList_sg7yuw$(document.getElementsByClassName('thread'));
+        var destination_1 = new Kotlin.ArrayList();
+        var tmp$8;
+        tmp$8 = $receiver_2.iterator();
+        while (tmp$8.hasNext()) {
+          var element_3 = tmp$8.next();
+          var main_kand9s$f_4$result;
+          main_kand9s$f_4$break: {
+            var tmp$11, tmp$10;
+            var text = (tmp$10 = (tmp$11 = element_3.getElementsByClassName('post-message')[0]) != null ? tmp$11.textContent : null) != null ? tmp$10 : '';
+            var tmp$9;
+            tmp$9 = _.StopWords.items.iterator();
+            while (tmp$9.hasNext()) {
+              var element_4 = tmp$9.next();
+              if (element_4.containsMatchIn_6bul2c$(text)) {
+                main_kand9s$f_4$result = true;
+                break main_kand9s$f_4$break;
+              }
+            }
+            main_kand9s$f_4$result = false;
+          }
+          if (main_kand9s$f_4$result) {
+            destination_1.add_za3rmp$(element_3);
+          }
+        }
+        var tmp$12;
+        tmp$12 = destination_1.iterator();
+        while (tmp$12.hasNext()) {
+          var element_5 = tmp$12.next();
+          var tmp$13;
+          var clickEvent = document.createEvent('MouseEvents');
+          clickEvent.initEvent('click', true, true);
+          (tmp$13 = element_5.getElementsByClassName('postbtn-hide')[0]) != null ? tmp$13.dispatchEvent(clickEvent) : null;
         }
       }
     },

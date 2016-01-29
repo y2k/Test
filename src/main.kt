@@ -20,6 +20,17 @@ fun main(args: Array<String>) {
         .forEach { it.style.color = "#a0a0a0" }
 
     if (document.isThread()) {
+        // Выстраивание постов иерархически
+        val rootMessage = parseInt(document.getElementById("qr-thread")!!.attributes["value"]!!.value)
+        val messageParentNode = posts[0].element.parentNode!!
+
+        HierarchySorter(posts, rootMessage)
+            .sort()
+            .forEach {
+                it.element.style.marginLeft = "${20 * it.computeLevel(rootMessage, posts)}px"
+                messageParentNode.appendChild(it.element)
+            }
+    } else {
         // Скрытие тредов со стоп-словами
         document
             .getElementsByClassName("thread").asList()
@@ -31,17 +42,6 @@ fun main(args: Array<String>) {
                 val clickEvent = document.createEvent("MouseEvents")
                 clickEvent.initEvent("click", true, true);
                 it.getElementsByClassName("postbtn-hide")[0]?.dispatchEvent(clickEvent)
-            }
-    } else {
-        // Выстраивание постов иерархически
-        val rootMessage = parseInt(document.getElementById("qr-thread")!!.attributes["value"]!!.value)
-        val messageParentNode = posts[0].element.parentNode!!
-
-        HierarchySorter(posts, rootMessage)
-            .sort()
-            .forEach {
-                it.element.style.marginLeft = "${20 * it.computeLevel(rootMessage, posts)}px"
-                messageParentNode.appendChild(it.element)
             }
     }
 }
